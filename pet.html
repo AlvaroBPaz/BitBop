@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BitBop Pet</title>
+  <link rel="stylesheet" href="css/pet.css">
+</head>
+<body>
+
+  <div id="fxLayer"></div>
+
+  <!-- Robô BitBop Livre na Área de Trabalho -->
+  <div id="actorRoot">
+    <div class="speech-bubble interactive" id="speechBubble">
+      <div class="speech-status">
+        <span id="speakerLabel">BitBop</span>
+        <span id="visionBadge" style="display:none; color:#fde047;">👀 Vendo Tela</span>
+        <span id="obsidianBadge" style="display:none; color:#38bdf8; font-size:10px; margin-left:6px; background:rgba(56,189,248,0.15); padding:1px 6px; border-radius:4px; border:1px solid rgba(56,189,248,0.35);">📚 Lido do Obsidian</span>
+      </div>
+      <div class="speech-content" id="speechText">Oi! Estou acordando...</div>
+    </div>
+
+    <!-- Mini Balão de Ação / Notificação Compacta Flutuante (Sempre visível mesmo com balão de fala desativado) -->
+    <div class="action-badge" id="actionBadge">
+      <span class="action-badge-icon" id="actionBadgeIcon">⚡</span>
+      <span class="action-badge-text" id="actionBadgeText">Pronto</span>
+    </div>
+
+    <div class="pet-scale-wrap" id="petScaleWrap">
+      <div class="pet-rig interactive" id="petRig" data-skin="classic">
+        <!-- Zona superior sensível a carinho / cafuné -->
+        <div class="head-pat-zone interactive" id="headPatZone" title="Passe o mouse aqui para fazer carinho!"></div>
+
+        <div class="chassis interactive" id="chassis">
+          <!-- Alça de redimensionamento direto (arraste ou use Ctrl + Scroll no robô) -->
+          <div class="resize-grip interactive" id="resizeGrip" title="Arraste para diminuir/aumentar o BitBop (ou use Ctrl + Scroll)">⤡</div>
+
+          <div class="oled-screen interactive" id="oledScreen">
+          <div class="scan-beam" id="scanBeam"></div>
+
+          <svg class="face-svg" viewBox="0 0 320 240" id="faceSvg">
+            <defs>
+              <filter id="oledGlow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="3.5" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- Bochechas coradas (carinho / felicidade / vergonha) -->
+            <g id="blushGroup" opacity="0" style="transition: opacity 0.25s ease;">
+              <ellipse cx="58" cy="148" rx="22" ry="11" fill="#fb7185" opacity="0.55" filter="url(#oledGlow)" />
+              <ellipse cx="262" cy="148" rx="22" ry="11" fill="#fb7185" opacity="0.55" filter="url(#oledGlow)" />
+            </g>
+
+            <!-- Grupo de olhar com perspectiva 2.5D -->
+            <g id="faceContent" filter="url(#oledGlow)">
+              <!-- Sobrancelhas expressivas -->
+              <path id="leftBrow" d="" stroke="#00f5ff" stroke-width="6" stroke-linecap="round" fill="none" />
+              <path id="rightBrow" d="" stroke="#00f5ff" stroke-width="6" stroke-linecap="round" fill="none" />
+
+              <!-- Olho Esquerdo -->
+              <g id="leftEyeSlot" transform="translate(92, 108)">
+                <ellipse id="leftEyeMain" cx="0" cy="0" rx="21" ry="25" fill="#00f5ff" />
+                <circle id="leftEyeGlint" cx="-6" cy="-8" r="5" fill="#ffffff" opacity="0.85" />
+                <path id="leftEyeShape" d="" stroke="#00f5ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <ellipse id="leftTear" cx="12" cy="24" rx="5" ry="7" fill="#93c5fd" opacity="0" />
+              </g>
+
+              <!-- Olho Direito -->
+              <g id="rightEyeSlot" transform="translate(228, 108)">
+                <ellipse id="rightEyeMain" cx="0" cy="0" rx="21" ry="25" fill="#00f5ff" />
+                <circle id="rightEyeGlint" cx="-6" cy="-8" r="5" fill="#ffffff" opacity="0.85" />
+                <path id="rightEyeShape" d="" stroke="#00f5ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                <ellipse id="rightTear" cx="-12" cy="24" rx="5" ry="7" fill="#93c5fd" opacity="0" />
+              </g>
+
+              <!-- Boca expressiva + Lip-Sync por forma de onda -->
+              <g id="mouthSlot" transform="translate(160, 176)">
+                <path id="mouthPath" d="M -22 0 Q 0 6 22 0" stroke="#00f5ff" stroke-width="6.5" stroke-linecap="round" fill="none" />
+                <rect id="mouthTalkRect" x="-22" y="-4" width="44" height="8" rx="4" fill="#00f5ff" opacity="0" />
+              </g>
+
+              <!-- Indicador de pensamento (...) no canto da tela OLED -->
+              <g id="thinkDots" opacity="0" transform="translate(268, 42)">
+                <circle id="td1" cx="-14" cy="0" r="4" fill="#38bdf8" />
+                <circle id="td2" cx="0" cy="0" r="4" fill="#38bdf8" />
+                <circle id="td3" cx="14" cy="0" r="4" fill="#38bdf8" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <!-- 2 Botõezinhos discretos integrados à moldura M5Stack -->
+        <div class="bezel-controls">
+          <button class="bezel-btn mic-on interactive" id="btnBezelMic" title="Microfone Automático (Clique para mutar/ativar)">🎤</button>
+          <button class="bezel-btn interactive" id="btnBezelSettings" title="Configurações do BitBop">⚙️</button>
+        </div>
+      </div>
+
+        <!-- Pezinhos articulados -->
+        <div class="feet-row interactive">
+          <div class="servo-foot interactive" id="footLeft"></div>
+          <div class="servo-foot interactive" id="footRight"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Painel Interno de Ferramentas & Configurações Reformado com Abas -->
+  <div id="settingsPopover" class="interactive">
+    <div class="cfg-header">
+      <div class="cfg-title">⚙️ Ferramentas do BitBop</div>
+      <button class="cfg-close" id="btnCloseSettings" title="Fechar painel">✕</button>
+    </div>
+
+    <!-- Barra de Navegação por Abas -->
+    <div class="cfg-tabs">
+      <button class="cfg-tab-btn active" data-tab="tabVisual">🎭 Visual</button>
+      <button class="cfg-tab-btn" data-tab="tabAi">🧠 Cérebro</button>
+      <button class="cfg-tab-btn" data-tab="tabAudio">🎙️ Áudio</button>
+      <button class="cfg-tab-btn" data-tab="tabTricks">🎬 Truques</button>
+    </div>
+
+    <!-- ==================== ABA 1: VISUAL & MODOS ==================== -->
+    <div id="tabVisual" class="cfg-tab-content active">
+      <!-- Card do Perfil de Estudo (Study Mode) Focado & Multimodal -->
+      <div class="cfg-row-inline" style="background: rgba(56, 189, 248, 0.12); padding: 8px 10px; border-radius: 11px; border: 1px dashed rgba(56, 189, 248, 0.48); margin-bottom: 9px;">
+        <div>
+          <span style="font-weight: 700; color: #7dd3fc; font-size: 11.5px;">📚 Perfil de Estudo (Study Mode)</span>
+          <div id="txtStudyModeDesc" style="font-size: 9.5px; color: #cbd5e1; margin-top: 2px; line-height: 1.3;">Focado, silencioso em background e com leitura multimodal da tela (Atalho: <b>Alt+S</b>).</div>
+        </div>
+        <label class="switch"><input type="checkbox" id="chkStudyMode" /><span class="slider"></span></label>
+      </div>
+
+      <!-- Card do Modo de Ações Aleatórias Silencioso -->
+      <div class="cfg-row-inline" style="background: rgba(168, 85, 247, 0.12); padding: 8px 10px; border-radius: 11px; border: 1px dashed rgba(168, 85, 247, 0.45); margin-bottom: 9px;">
+        <div>
+          <span style="font-weight: 700; color: #d8b4fe; font-size: 11.5px;">🎭 Modo Ações & Truques</span>
+          <div id="txtSilentDanceDesc" style="font-size: 9.5px; color: #cbd5e1; margin-top: 2px; line-height: 1.3;">100% Silencioso: anda e faz acrobacias mantendo tamanho e cor intactos!</div>
+        </div>
+        <label class="switch"><input type="checkbox" id="chkSilentDance" /><span class="slider"></span></label>
+      </div>
+
+      <!-- Tamanho do Pet -->
+      <div class="cfg-card">
+        <div class="cfg-card-title">
+          <span>📏 Tamanho do BitBop</span>
+          <div style="display:flex; align-items:center; gap:6px;">
+            <span id="lblScalePct" style="font-size: 11px; color: #38bdf8; font-weight: 700;">100%</span>
+            <button id="btnResetScale" title="Voltar ao tamanho 100%" style="background:rgba(56,189,248,0.16); color:#7dd3fc; border:1px solid rgba(56,189,248,0.35); border-radius:6px; padding:1px 5px; font-size:10px; cursor:pointer;">100%</button>
+          </div>
+        </div>
+        <input type="range" id="rngScale" min="38" max="135" step="1" value="100" style="width:100%; accent-color:#38bdf8; cursor:pointer;" />
+        <div style="font-size: 9px; color: #94a3b8; margin-top: 4px;">Dica: arraste o canto <b>⤡</b> dele ou use <b>Ctrl + Scroll</b> no robô!</div>
+      </div>
+
+      <!-- Cor da Carcaça -->
+      <div class="cfg-card">
+        <div class="cfg-card-title">🎨 Cor da Carcaça</div>
+        <div class="skin-dots" id="skinSelector">
+          <div class="skin-dot active" data-skin="classic" style="background: linear-gradient(135deg,#f8fafc,#94a3b8);" title="Clássico M5"></div>
+          <div class="skin-dot" data-skin="cyber" style="background: linear-gradient(135deg,#334155,#0f172a);" title="Preto Cyber"></div>
+          <div class="skin-dot" data-skin="sakura" style="background: linear-gradient(135deg,#ffe4e6,#fb7185);" title="Rosa Sakura"></div>
+          <div class="skin-dot" data-skin="mint" style="background: linear-gradient(135deg,#d1fae5,#10b981);" title="Menta"></div>
+          <div class="skin-dot" data-skin="m5yellow" style="background: linear-gradient(135deg,#fef08a,#eab308);" title="Amarelo M5Go"></div>
+        </div>
+      </div>
+
+      <!-- Comportamentos no Desktop -->
+      <div class="cfg-card">
+        <div class="cfg-card-title">🚶 Movimentação & Telas</div>
+        <div class="cfg-row-inline" style="margin-bottom: 6px;">
+          <span>Passear livre pelas telas</span>
+          <label class="switch"><input type="checkbox" id="chkRoam" checked /><span class="slider"></span></label>
+        </div>
+        <div class="cfg-row-inline" style="margin-bottom: 0;">
+          <span>Reagir curioso às janelas</span>
+          <label class="switch"><input type="checkbox" id="chkAutoCurious" checked /><span class="slider"></span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== ABA 2: CÉREBRO & IA ==================== -->
+    <div id="tabAi" class="cfg-tab-content">
+      <!-- Personalidade e Estudos -->
+      <div class="cfg-card" style="border-color: rgba(168, 85, 247, 0.3);">
+        <div class="cfg-card-title" style="color: #c084fc;">
+          <span>🎓 Personalidade & Foco</span>
+          <span id="badgePersonality" style="font-size: 9.5px; font-weight: 700; color: #c084fc; background: rgba(168, 85, 247, 0.16); padding: 1px 6px; border-radius: 4px;">Eng. Software</span>
+        </div>
+        <select class="cfg-select" id="selPersonality" style="margin-bottom: 6px;">
+          <option value="adaptativo">🧠 Adaptativo (Cérebro Obsidian)</option>
+          <option value="engenharia_software">🎓 Mentor de Engenharia de Software</option>
+          <option value="padrao">🤖 Companheiro Fofo Padrão</option>
+          <option value="gamer">🎮 Parceiro Gamer & Raid Co-pilot</option>
+          <option value="cyberpunk">🕶️ Hacker & Arquiteto Cyberpunk</option>
+          <option value="custom">✏️ Personalidade Personalizada</option>
+        </select>
+        <div id="boxCustomPersonality" style="display:none; margin-top: 4px;">
+          <textarea id="txtCustomPersonality" rows="2" class="cfg-input" placeholder="Escreva o foco de estudo ou como você quer que ele fale..." style="width:100%; font-size:10px; resize:vertical;"></textarea>
+        </div>
+        <div id="txtPersonalityDesc" style="font-size: 9.5px; color: #cbd5e1; margin-top: 4px; line-height: 1.35;">
+          🎓 Mentor de Eng. de Software: Clean Code, SOLID, Padrões GoF, Arquitetura e análise de código arrastado!
+        </div>
+
+        <!-- Painel Expansível: Como estou agora -->
+        <button id="btnTogglePersonalityDetails" type="button" style="width: 100%; margin-top: 8px; font-size: 10px; font-weight: 600; padding: 4px 8px; background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.35); color: #d8b4fe; border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: space-between;">
+          <span>📊 Como estou agora</span>
+          <span id="iconTogglePersonalityDetails">▾</span>
+        </button>
+
+        <div id="boxPersonalityDetails" style="display: none; margin-top: 8px; background: rgba(0, 0, 0, 0.25); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 5px; padding: 8px;">
+          <div id="txtPersonalityDetailReason" style="font-size: 9.5px; color: #cbd5e1; margin-bottom: 8px; font-style: italic; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 4px;">
+            Faceta ativa: Mentor Dev • Contexto: Desenvolvimento
+          </div>
+
+          <!-- Barras Visuais dos 8 Traços -->
+          <div id="containerTraitBars" style="display: flex; flex-direction: column; gap: 4px; margin-bottom: 8px;">
+            <!-- Gerado dinamicamente via JS -->
+          </div>
+
+          <!-- Botões de Ação -->
+          <div style="display: flex; gap: 4px; margin-top: 6px;">
+            <button id="btnLockPersonality" type="button" class="cfg-action-btn" style="flex: 1; font-size: 9px; padding: 4px 2px; background: rgba(56, 189, 248, 0.16); border: 1px solid rgba(56, 189, 248, 0.35); color: #7dd3fc; border-radius: 4px; cursor: pointer;" title="Congela a personalidade exatamente como está">🔒 Travar</button>
+            <button id="btnResetTraits" type="button" class="cfg-action-btn" style="flex: 1; font-size: 9px; padding: 4px 2px; background: rgba(239, 68, 68, 0.16); border: 1px solid rgba(239, 68, 68, 0.35); color: #fca5a5; border-radius: 4px; cursor: pointer;" title="Reseta os offsets acumulados para os valores-base">↺ Resetar</button>
+            <button id="btnViewPersonalityHistory" type="button" class="cfg-action-btn" style="flex: 1; font-size: 9px; padding: 4px 2px; background: rgba(168, 85, 247, 0.16); border: 1px solid rgba(168, 85, 247, 0.35); color: #d8b4fe; border-radius: 4px; cursor: pointer;" title="Abre Historico_Adaptacao.md no Obsidian">📜 Histórico</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Provedor de IA -->
+      <div class="cfg-card">
+        <div class="cfg-card-title">🤖 Provedor do Cérebro</div>
+        <select class="cfg-select" id="selAiProvider">
+          <option value="gemini">Google Gemini (Nuvem - Inteligente + Fallback Groq)</option>
+          <option value="groq">Groq Cloud LPU (Qwen 3.8 27B - Ultra-Rápido ~250ms)</option>
+          <option value="local">Local: Qwen GPU (Offline)</option>
+        </select>
+      </div>
+
+      <!-- Configuração Gemini -->
+      <div id="geminiConfigGroup" class="cfg-card" style="display:none; border-color: rgba(56,189,248,0.35);">
+        <div class="cfg-card-title" style="color:#38bdf8;">
+          <span>Modelo Gemini</span>
+          <span id="geminiStatusBadge" style="font-size: 9.5px; color: #34d399; font-weight: 600;">● Conectando...</span>
+        </div>
+        <select class="cfg-select" id="selGeminiModel" style="margin-bottom: 6px;">
+          <option value="gemini-3.1-flash-lite">Gemini 3.1 Flash-Lite (Cascata: 3.1 ➔ 3.5 ➔ Groq ➔ Ollama)</option>
+          <option value="gemini-3.5-flash-lite">Gemini 3.5 Flash-Lite (Rápido)</option>
+          <option value="gemini-3.5-flash">Gemini 3.5 Flash (Equilibrado)</option>
+          <option value="gemini-3.8-flash">Gemini 3.8 Flash (Avançado)</option>
+          <option value="custom">Outro modelo personalizado...</option>
+        </select>
+        <input type="text" id="txtCustomModel" class="cfg-select" placeholder="Ex: gemini-3.1-flash-lite" style="display:none; margin-bottom: 6px;" />
+        <span class="cfg-label">Chave de API Gemini</span>
+        <input type="password" id="txtGeminiKey" class="cfg-select" placeholder="Cole sua chave de API Gemini..." />
+        <div style="font-size: 9.5px; color: #94a3b8; margin-top: 4px;">
+          Gerenciar chaves em <a href="#" id="linkAiStudio" style="color:#38bdf8; text-decoration: underline;">aistudio.google.com</a>
+        </div>
+      </div>
+
+      <!-- Agendamento no Google Agenda via Webhook -->
+      <div class="cfg-card" style="border-color: rgba(52, 211, 153, 0.32);">
+        <div class="cfg-card-title" style="color: #34d399;">
+          <span>📅 Google Agenda (Webhook)</span>
+          <span id="calendarWebhookBadge" style="font-size: 9.5px; color: #94a3b8; font-weight: 600;">Configurar URL</span>
+        </div>
+        <input type="text" id="txtCalendarWebhook" class="cfg-select" placeholder="https://script.google.com/macros/s/.../exec" />
+        <div style="font-size: 9.2px; color: #94a3b8; margin-top: 4px; line-height: 1.3;">
+          Implante o arquivo <b>google_calendar_webhook.gs</b> no Google Apps Script e cole a URL aqui ou em <code>GOOGLE_CALENDAR_WEBHOOK_URL</code> no <code>.env</code>.
+        </div>
+      </div>
+
+      <!-- Google Keep (Notas & Listas) via Cache + Webhook -->
+      <div class="cfg-card" style="border-color: rgba(251, 191, 36, 0.32);">
+        <div class="cfg-card-title" style="color: #fbbf24;">
+          <span>📝 Google Keep (Notas & Listas)</span>
+          <span id="keepWebhookBadge" style="font-size: 9.5px; color: #94a3b8; font-weight: 600;">Cache Local Ativo</span>
+        </div>
+        <input type="text" id="txtKeepWebhook" class="cfg-select" placeholder="URL Webhook Keep (ou deixe vazio p/ usar Agenda)" />
+        <div style="font-size: 9.2px; color: #94a3b8; margin-top: 4px; line-height: 1.3;">
+          Notas salvas localmente em <code>keep_notes_sync.json</code> (0ms). Sincronize na nuvem colando a URL do <b>google_keep_webhook.gs</b> aqui ou no <code>.env</code>.
+        </div>
+      </div>
+
+      <!-- Observador de Tela (~5 min) & Proatividade -->
+      <div class="cfg-card" style="border-color: rgba(56, 189, 248, 0.28);">
+        <div class="cfg-card-title" style="color: #38bdf8;">
+          <span>👁️ Observador de Tela (~5 min)</span>
+          <span id="badgeObserverStatus" style="font-size: 9.5px; color: #34d399; font-weight: 600;">Ativo</span>
+        </div>
+        <div class="cfg-row-inline" style="margin-bottom: 6px;">
+          <span>Comentar ao chegar perto de janelas</span>
+          <label class="switch"><input type="checkbox" id="chkProximityChat" checked /><span class="slider"></span></label>
+        </div>
+        <div style="display: flex; gap: 8px; margin-top: 6px;">
+          <div style="flex: 1;">
+            <label style="font-size: 9px; color: #94a3b8; display: block; margin-bottom: 2px;">Intervalo</label>
+            <select class="cfg-select" id="selObserverInterval" style="width: 100%; font-size: 9.5px; padding: 2px 4px;">
+              <option value="3">3 minutos</option>
+              <option value="5" selected>5 min (Padrão)</option>
+              <option value="10">10 minutos</option>
+              <option value="15">15 minutos</option>
+            </select>
+          </div>
+          <div style="flex: 1;">
+            <label style="font-size: 9px; color: #94a3b8; display: block; margin-bottom: 2px;">Reação Máxima</label>
+            <select class="cfg-select" id="selObserverMaxReaction" style="width: 100%; font-size: 9.5px; padding: 2px 4px;">
+              <option value="all" selected>Voz + Balão (15%)</option>
+              <option value="balloon">Só Balão Silencioso</option>
+              <option value="silent">Apenas Memória</option>
+            </select>
+          </div>
+        </div>
+        <div style="font-size: 8.8px; color: #64748b; margin-top: 4px; line-height: 1.25;">
+          Teto: 12 falas/dia. Janelas de bancos, senhas e modo privado são ignorados automaticamente.
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== ABA 3: VOZ & ÁUDIO ==================== -->
+    <div id="tabAudio" class="cfg-tab-content">
+      <!-- Modo de Comunicação (Voz / Balão) -->
+      <div class="cfg-card" style="border-color: rgba(56, 189, 248, 0.28);">
+        <div class="cfg-card-title" style="color: #38bdf8;">
+          <span>🔊 Modo de Resposta</span>
+          <span id="commModeBadge" style="font-size: 9.5px; font-weight: 700; color: #34d399; background: rgba(52, 211, 153, 0.14); padding: 1px 6px; border-radius: 4px;">Voz + Balão</span>
+        </div>
+        <div class="cfg-row-inline" style="padding: 2px 0; margin-bottom: 4px;">
+          <span>💬 Balão de Diálogo (Texto)</span>
+          <label class="switch"><input type="checkbox" id="chkBubble" checked /><span class="slider"></span></label>
+        </div>
+        <div class="cfg-row-inline" style="padding: 2px 0; margin-bottom: 4px;">
+          <span>🔊 Voz Falada (Áudio TTS)</span>
+          <label class="switch"><input type="checkbox" id="chkVoice" checked /><span class="slider"></span></label>
+        </div>
+        <div id="txtCommModeDesc" style="font-size: 9.5px; color: #94a3b8; margin-top: 4px; line-height: 1.35; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 4px;">
+          Padrão: fala em áudio e exibe a caixa de diálogo na tela.
+        </div>
+      </div>
+
+      <!-- Voz & Timbre -->
+      <div class="cfg-card">
+        <div class="cfg-card-title">🎙️ Timbre de Voz</div>
+        <select class="cfg-select" id="selVoice">
+          <optgroup label="🤖 Robôs Masculinos Sci-Fi (DSP Profissional)">
+            <option value="cyborg_optimus">01. Cyborg Alpha (Optimus / Mecha Bass)</option>
+            <option value="soundwave">02. Soundwave (Modulação Transformers)</option>
+            <option value="androide_cyber">03. Androide Tático (Cyberpunk / Delamain)</option>
+            <option value="hal9000">04. HAL 9000 (IA Sintética Metódica)</option>
+            <option value="protocol_droid">05. Droide de Protocolo (Sci-Fi Articulado)</option>
+            <option value="geth_legion">06. Legion / Geth (Rede Sintética)</option>
+            <option value="titan_dreadnought">07. Titã Dreadnought (Máquina Pesada)</option>
+            <option value="jarvis_cyber">08. Jarvis Cyber (Sintético Polido)</option>
+          </optgroup>
+          <optgroup label="🌟 Vozes Humanas Naturais">
+            <option value="antonio">Antonio Mentor (Masculina Profissional)</option>
+            <option value="brian">Brian Executivo (Masculina Sofisticada)</option>
+            <option value="andrew">Andrew Jovem (Masculina Descontraída)</option>
+            <option value="thalita">Thalita HD (Feminina Expressiva)</option>
+            <option value="francisca">Francisca Suave (Feminina Calma)</option>
+            <option value="emma">Emma Assistente (Feminina Jovem)</option>
+            <option value="ava">Ava Analítica (Feminina Lógica)</option>
+            <option value="stackchan">BitBop Fofo (Mascote Clássico)</option>
+            <option value="robozinho">Robozinho Companheiro</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- Reconhecimento de Voz (Audição STT) -->
+      <div class="cfg-card">
+        <div class="cfg-card-title">👂 Audição & Transcrição</div>
+        <select class="cfg-select" id="selSttMode">
+          <option value="groq-whisper-v3">Groq LPU: Whisper Large-v3 Completo (~200ms / 0MB VRAM)</option>
+          <option value="groq-whisper-turbo">Groq LPU: Whisper Large-v3-Turbo (0MB VRAM)</option>
+          <option value="gemini-audio">Áudio Nativo direto no Gemini (0MB VRAM)</option>
+          <option value="whisper-turbo">Local GPU: Whisper Large-v3-Turbo (~388ms / 600MB VRAM)</option>
+          <option value="whisper-small">Local GPU: Whisper Small Leve (~190MB VRAM)</option>
+        </select>
+      </div>
+
+      <!-- Configuração Groq LPU -->
+      <div id="groqConfigGroup" class="cfg-card" style="display:none; border-color: rgba(249,115,22,0.4);">
+        <div class="cfg-card-title" style="color:#fb923c;">
+          <span>Chave Groq (Whisper LPU)</span>
+          <span id="groqStatusBadge" style="font-size: 9.5px; color: #34d399; font-weight: 600;">● Conectando...</span>
+        </div>
+        <input type="password" id="txtGroqKey" class="cfg-select" placeholder="Cole sua chave gsk_..." />
+        <div style="font-size: 9.5px; color: #94a3b8; margin-top: 3px;">
+          Chaves em <a href="#" id="linkGroqConsole" style="color:#fb923c; text-decoration: underline;">console.groq.com/keys</a>
+        </div>
+      </div>
+
+      <!-- Microfone e Detecção -->
+      <div class="cfg-card">
+        <div class="cfg-card-title">🎤 Microfone & Interrupção</div>
+        <div class="cfg-row-inline" style="margin-bottom: 5px;">
+          <span>Ouvir voz continuamente</span>
+          <label class="switch"><input type="checkbox" id="chkMic" checked /><span class="slider"></span></label>
+        </div>
+        <div class="cfg-row-inline" style="margin-bottom: 5px;">
+          <span>Barge-In (parar fala ao me ouvir)</span>
+          <label class="switch"><input type="checkbox" id="chkBargeIn" checked /><span class="slider"></span></label>
+        </div>
+        <div class="cfg-row-inline" style="margin-bottom: 7px;">
+          <span>Sons fofos de robô (SFX)</span>
+          <label class="switch"><input type="checkbox" id="chkSfx" checked /><span class="slider"></span></label>
+        </div>
+
+        <span class="cfg-label">Microfone Físico</span>
+        <select class="cfg-select" id="selMic" style="margin-top: 3px;"></select>
+        <div class="vu-wrap"><div class="vu-fill" id="cfgVuBar"></div></div>
+
+        <span class="cfg-label" style="margin-top: 6px; display:block;">Sensibilidade Anti-Respiração</span>
+        <select class="cfg-select" id="selMicSens" style="margin-top: 3px;">
+          <option value="baixa">Baixa (Rejeita totalmente respiração / Fone perto da boca)</option>
+          <option value="media" selected>Média (Equilibrada - Padrão Recomendado)</option>
+          <option value="alta">Alta (Mais sensível - Para falar bem baixinho)</option>
+        </select>
+      </div>
+
+      <!-- Biometria Vocal & Reconhecimento do Dono -->
+      <div class="cfg-card" style="border-color: rgba(52, 211, 153, 0.35);">
+        <div class="cfg-card-title" style="color: #34d399;">
+          <span>🎙️ Biometria Vocal (CAM++ AI)</span>
+          <span id="badgeBiometrics" style="font-size: 9.5px; color: #fbbf24; font-weight: 600;">○ Não Calibrada</span>
+        </div>
+        <div style="font-size: 9.5px; color: #94a3b8; margin-bottom: 8px;">
+          Reconhece o timbre único das suas cordas vocais em ~25ms. Rejeita vozes de amigos no Discord e sons de fundo.
+        </div>
+        <div class="cfg-row-inline" style="margin-bottom: 8px;">
+          <span>Restringir comandos apenas à minha voz</span>
+          <label class="switch"><input type="checkbox" id="chkBiometricsRestricted" /><span class="slider"></span></label>
+        </div>
+        <div style="display: flex; gap: 6px; margin-top: 4px;">
+          <button class="cfg-action-btn" id="btnCalibrateVoice" style="flex: 1; background: rgba(52, 211, 153, 0.2); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.4);" title="Gravar 5 segundos de fala para cadastrar sua voz">🎙️ Calibrar Minha Voz</button>
+          <button class="cfg-action-btn" id="btnResetBiometrics" style="display: none; background: rgba(239, 68, 68, 0.2); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4);" title="Apagar assinatura vocal salva">🗑️ Resetar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== ABA 4: TRUQUES & EXPRESSÕES ==================== -->
+    <div id="tabTricks" class="cfg-tab-content">
+      <div class="cfg-card">
+        <div class="cfg-card-title">🎬 Testar Truques & Acrobacias</div>
+        <div style="font-size: 9.5px; color:#94a3b8; margin-bottom: 7px;">Clique em qualquer truque para o robô executar agora na tela:</div>
+        <div class="mood-grid">
+          <button class="mood-btn trick-btn" data-action="DANCAR" title="Diga: 'Dança pra mim!'">🕺 Dançar</button>
+          <button class="mood-btn trick-btn" data-action="MORTAL" title="Diga: 'Dá um mortal!'">🤸 Mortal</button>
+          <button class="mood-btn trick-btn" data-action="MOONWALK" title="Diga: 'Faz o moonwalk!'">🕶️ Moonwalk</button>
+          <button class="mood-btn trick-btn" data-action="COMEMORAR" title="Diga: 'Comemora! / GG!'">🏆 Vitória</button>
+          <button class="mood-btn trick-btn" data-action="ESCONDER" title="Diga: 'Se abaixa! / Sniper!'">🫣 Esconder</button>
+          <button class="mood-btn trick-btn" data-action="FINGIR_MORTO" title="Diga: 'Bang! / Finge de morto'">💀 Morto</button>
+          <button class="mood-btn trick-btn" data-action="CORRER_TURBO" title="Diga: 'Corre turbo!'">⚡ Turbo</button>
+          <button class="mood-btn trick-btn" data-action="CANTAR" title="Diga: 'Canta uma música!'">🎤 Cantar</button>
+          <button class="mood-btn trick-btn" data-action="MODO_COMBATE" title="Diga: 'Modo combate!'">⚔️ Combate</button>
+          <button class="mood-btn trick-btn" data-action="MANDAR_BEIJO" title="Diga: 'Manda um beijo!'">😘 Beijo</button>
+          <button class="mood-btn trick-btn" data-action="MODO_RGB" title="Diga: 'Modo RGB!'">🌈 RGB</button>
+          <button class="mood-btn trick-btn" data-action="SEGUIR_MOUSE" title="Diga: 'Segue meu mouse!'">🖱️ Seguir</button>
+        </div>
+      </div>
+
+      <div class="cfg-card">
+        <div class="cfg-card-title">👀 Testar Expressões do Visor OLED</div>
+        <div class="mood-grid">
+          <button class="mood-btn" data-mood="HAPPY">😊 Feliz</button>
+          <button class="mood-btn" data-mood="EXCITED">🤩 Empolgado</button>
+          <button class="mood-btn" data-mood="LOVE">🥰 Amor</button>
+          <button class="mood-btn" data-mood="SAD">😢 Triste</button>
+          <button class="mood-btn" data-mood="ANGRY">😠 Bravo</button>
+          <button class="mood-btn" data-mood="SURPRISED">😲 Surpreso</button>
+          <button class="mood-btn" data-mood="LAUGHING">😆 Rindo</button>
+          <button class="mood-btn" data-mood="DIZZY">😵 Tonto</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botões de Ação de Rodapé -->
+    <div class="cfg-actions">
+      <button class="cfg-action-btn" id="btnToggleStudyFooter" style="background: rgba(56, 189, 248, 0.2); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.4);" title="Alternar Modo Estudo (Alt+S)">📚 Estudo</button>
+      <button class="cfg-action-btn" id="btnToggleListenerMode" style="background: rgba(45, 212, 191, 0.2); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.4);" title="Alternar Modo Ouvinte Silencioso (Alt+O)">🎧 Ouvinte</button>
+      <button class="cfg-action-btn" id="btnSleepConsolidate" style="background: rgba(167, 139, 250, 0.22); color: #c4b5fd; border: 1px solid rgba(167, 139, 250, 0.45);" title="Dormir e consolidar memórias agora">💤 Dormir</button>
+      <button class="cfg-action-btn" id="btnPrivateModeFooter" style="background: rgba(236, 72, 153, 0.22); color: #f472b6; border: 1px solid rgba(236, 72, 153, 0.45);" title="Alternar Modo Privado (Alt+P)">🕶️ Privado</button>
+      <button class="cfg-action-btn" id="btnSwitchScreen" style="background: rgba(56, 189, 248, 0.2); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.4);" title="Mandar o BitBop passear na outra tela">🗺️ Outra Tela</button>
+      <button class="cfg-action-btn btn-quit" id="btnQuitApp">✕ Sair</button>
+    </div>
+  </div>
+
+
+  <!-- Modulos de Arquitetura Modular do BitBop -->
+  <script src="js/pet_state.js"></script>
+  <script src="js/cute_synth.js"></script>
+  <script src="js/pet_canvas.js"></script>
+  <script src="js/pet_physics.js"></script>
+  <script src="silent_roam_dance.js"></script>
+  <script src="calendar_scheduler.js"></script>
+  <script src="keep_service.js"></script>
+  <script src="study_mode.js"></script>
+  <script src="js/memory/memory_store.js"></script>
+  <script src="js/memory/memory_index.js"></script>
+  <script src="js/memory/memory_retriever.js"></script>
+  <script src="js/memory/vault_watcher.js"></script>
+  <script src="js/memory/memory_tools.js"></script>
+  <script src="js/memory/memory_extractor.js"></script>
+  <script src="js/memory/memory_consolidator.js"></script>
+  <script src="js/memory/hippocampus_logger.js"></script>
+  <script src="js/memory/brain_catalog.js"></script>
+  <script src="js/memory/subconscious_navigator.js"></script>
+  <script src="js/personality/personality_store.js"></script>
+  <script src="js/personality/personality_engine.js"></script>
+  <script src="js/personality/context_detector.js"></script>
+  <script src="js/personality/personality_learner.js"></script>
+  <script src="js/observer/screen_observer.js"></script>
+  <script src="js/personality/personality_tools.js"></script>
+  <script src="js/voice/voice_biometrics.js"></script>
+  <script src="js/pet_tts.js"></script>
+  <script src="js/pet_brain.js"></script>
+  <script src="js/pet_interactions.js"></script>
+  <script src="js/pet_audio.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amostras de Vozes - Stack-chan Companion</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0b0f19;
+      color: #f1f5f9;
+      padding: 32px 20px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 28px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+    .category-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 28px 0 14px;
+      color: #a855f7;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-left: 4px solid #a855f7;
+      padding-left: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 16px;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      border-color: #38bdf8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .voice-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+    .voice-desc {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 12px;
+      min-height: 36px;
+    }
+    .audio-player {
+      width: 100%;
+      height: 36px;
+      border-radius: 6px;
+      outline: none;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      background: rgba(56, 189, 248, 0.12);
+      color: #38bdf8;
+    }
+    .tag.fem { background: rgba(244, 114, 182, 0.15); color: #f472b6; }
+    .tag.masc { background: rgba(96, 165, 250, 0.15); color: #60a5fa; }
+    .tag.scifi { background: rgba(168, 85, 247, 0.15); color: #c084fc; }
+    .instruction-box {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 36px;
+      font-size: 13.5px;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎙️ Testador de Vozes - Stack-chan Companion</h1>
+      <p class="subtitle">Ouça cada amostra abaixo e escolha qual timbre é mais agradável para seus estudos e dia a dia.</p>
+      <p style="font-size:12px; color:#64748b; margin-top:4px;">Frase falada em todos os áudios: <em>“Olá! Eu sou a Stack-chan, sua mentora de estudos de Engenharia de Software. Como posso te ajudar hoje?”</em></p>
+    </header>
+
+    <div class="category-title">🌟 1. Vozes Super Naturais & Acolhedoras (Recomendadas para Estudos)</div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag fem">Feminina HD</span>
+        <div class="voice-name">01. Thalita HD Natural</div>
+        <div class="voice-desc">Voz moderna brasileira da Microsoft, ultra expressiva e clara. Excelente para foco contínuo.</div>
+        <audio class="audio-player" controls preload="none" src="01_Thalita_Natural_Expressiva.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag fem">Feminina Suave</span>
+        <div class="voice-name">02. Francisca Calma</div>
+        <div class="voice-desc">Tom aveludado, sereno e acolhedor. Perfeita para quem estuda por horas sem cansaço auditivo.</div>
+        <audio class="audio-player" controls preload="none" src="02_Francisca_Calma_Acolhedora.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag masc">Masculina Mentor</span>
+        <div class="voice-name">03. Antonio Mentor</div>
+        <div class="voice-desc">Voz masculina madura, firme e didática. Excelente como professor de arquitetura e código.</div>
+        <audio class="audio-player" controls preload="none" src="03_Antonio_Mentor_Profissional.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag masc">Executivo Premium</span>
+        <div class="voice-name">04. Brian Jarvis</div>
+        <div class="voice-desc">Voz masculina profunda e sofisticada. Lembra o Jarvis do Homem de Ferro em tom natural e elegante.</div>
+        <audio class="audio-player" controls preload="none" src="04_Brian_Jarvis_Executivo.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag fem">Internacional Fluente</span>
+        <div class="voice-name">05. Emma Assistente</div>
+        <div class="voice-desc">Voz feminina jovem e cosmopolita com dicção impecável em português.</div>
+        <audio class="audio-player" controls preload="none" src="05_Emma_Assistente_Moderna.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag fem">Analítica & Lógica</span>
+        <div class="voice-name">06. Ava IA Analítica</div>
+        <div class="voice-desc">Tom claro, objetivo e equilibrado. Excelente para raciocínio lógico e diagramas de software.</div>
+        <audio class="audio-player" controls preload="none" src="06_Ava_IA_Analitica.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag masc">Jovem & Amigável</span>
+        <div class="voice-name">07. Andrew Descontraído</div>
+        <div class="voice-desc">Voz jovem e enérgica, ideal para um ambiente descontraído de programação.</div>
+        <audio class="audio-player" controls preload="none" src="07_Andrew_Jovem_Descontraido.mp3"></audio>
+      </div>
+    </div>
+
+    <div class="category-title">✨ 2. Estilo Companheiro & Mascote (Rápida e Expressiva)</div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag fem">Mascote Ágil</span>
+        <div class="voice-name">08. Stack-chan Fofa Clássica</div>
+        <div class="voice-desc">A voz tradicional rápida e alegre de mascote desktop pet.</div>
+        <audio class="audio-player" controls preload="none" src="08_StackChan_Fofa_Classica.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag fem">Gamer Dinâmica</span>
+        <div class="voice-name">09. Chibi Gamer</div>
+        <div class="voice-desc">Voz feminina animada com cadência ágil e expressiva.</div>
+        <audio class="audio-player" controls preload="none" src="09_Chibi_Gamer.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag masc">Copiloto</span>
+        <div class="voice-name">10. Copiloto Tech Ágil</div>
+        <div class="voice-desc">Cadência dinâmica focada em pair programming.</div>
+        <audio class="audio-player" controls preload="none" src="10_Copiloto_Tech_Agil.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag masc">Simpático</span>
+        <div class="voice-name">13. Robozinho Mini</div>
+        <div class="voice-desc">Tom companheiro amigável com entonação levemente acelerada.</div>
+        <audio class="audio-player" controls preload="none" src="13_Robozinho_Mini.mp3"></audio>
+      </div>
+    </div>
+
+    <div class="category-title">🤖 3. Sintéticas & Sci-Fi Limpas (Sem Distorção Estridente)</div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag scifi">Sci-Fi Clean</span>
+        <div class="voice-name">11. Androide Sintético Polido</div>
+        <div class="voice-desc">Voz masculina cadenciada e limpa, estilo robô futurista sem chiados.</div>
+        <audio class="audio-player" controls preload="none" src="11_Androide_Sintetico_Polido.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag scifi">Computador de Bordo</span>
+        <div class="voice-name">12. IA Futurista Clean</div>
+        <div class="voice-desc">Tom sintético sereno e assertivo, ideal para notificações e respostas diretas.</div>
+        <audio class="audio-player" controls preload="none" src="12_IA_Futurista_Clean.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag scifi">Retrô</span>
+        <div class="voice-name">14. Sintetizador Retrô</div>
+        <div class="voice-desc">Tom sintético mais cadenciado e grave.</div>
+        <audio class="audio-player" controls preload="none" src="14_Sintetizador_Retro.mp3"></audio>
+      </div>
+    </div>
+
+    <div class="category-title">🇵🇹 4. Português Europeu</div>
+    <div class="grid">
+      <div class="card">
+        <span class="tag fem">Portugal</span>
+        <div class="voice-name">15. Raquel Portuguesa</div>
+        <div class="voice-desc">Sotaque formal e culto de Portugal.</div>
+        <audio class="audio-player" controls preload="none" src="15_Raquel_Portuguesa_Elegante.mp3"></audio>
+      </div>
+      <div class="card">
+        <span class="tag masc">Portugal</span>
+        <div class="voice-name">16. Duarte Português</div>
+        <div class="voice-desc">Tom acadêmico e professoral de Portugal.</div>
+        <audio class="audio-player" controls preload="none" src="16_Duarte_Portugues_Academico.mp3"></audio>
+      </div>
+    </div>
+
+    <div class="instruction-box">
+      <strong>💡 Como ativar a voz que você preferir na Stack-chan:</strong><br>
+      Basta me dizer qual número ou nome você mais gostou (ex: <em>“gostei da 01 Thalita”</em> ou <em>“quero a 04 Brian Jarvis”</em>) que eu configuro imediatamente como a voz padrão do seu pet!
+    </div>
+  </div>
+</body>
+</html>

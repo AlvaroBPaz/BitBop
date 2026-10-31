@@ -1,0 +1,34 @@
+# Dependências Node.js
+node_modules/
+
+# Dados de Sessão e Cache do Electron / Navegador
+.user-data/
+*.log
+pet-debug.log
+
+# Arquivos de Segredos e Credenciais Pessoais (NUNCA SUBIR PARA REPO PÚBLICO)
+.env
+.gemini-config.json
+
+# Cache do Google Keep
+keep_notes_cache.json
+keep_notes_sync.json
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Arquivos temporários e backups
+*.bak
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Obsidian Workspace local (evita conflitos de layout individual)
+BitBop-Cerebro/.obsidian/workspace*.json

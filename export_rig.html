@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>BitBop Exporter Rig</title>
+  <link rel="stylesheet" href="css/pet.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      background: transparent !important;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #exportContainer {
+      width: 512px;
+      height: 512px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .scale-2x {
+      transform: scale(2.15);
+      transform-origin: center center;
+    }
+    .resize-grip { display: none !important; }
+    .bezel-btn {
+      opacity: 0.9 !important;
+      pointer-events: none;
+    }
+    /* Para export de tela OLED close-up em alta resolução */
+    .oled-focus {
+      position: fixed !important;
+      left: 50% !important;
+      top: 50% !important;
+      transform: translate(-50%, -50%) scale(2.8) !important;
+      width: 154px !important;
+      height: 112px !important;
+      border-radius: 16px !important;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.95), inset 0 2px 10px rgba(0,0,0,0.9), 0 0 16px var(--glow-color, rgba(0,245,255,0.25)) !important;
+      z-index: 9999 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="exportContainer">
+    <div class="scale-2x" id="scaleWrapper">
+      <div class="pet-rig interactive" id="petRig" data-skin="classic">
+        <!-- Zona superior sensível a carinho -->
+        <div class="head-pat-zone interactive" id="headPatZone"></div>
+
+        <div class="chassis interactive" id="chassis">
+          <div class="resize-grip" id="resizeGrip"></div>
+
+          <div class="oled-screen interactive" id="oledScreen">
+            <div class="scan-beam" id="scanBeam"></div>
+
+            <svg class="face-svg" viewBox="0 0 320 240" id="faceSvg">
+              <defs>
+                <filter id="oledGlow" x="-30%" y="-30%" width="160%" height="160%">
+                  <feGaussianBlur stdDeviation="3.5" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <!-- Bochechas coradas -->
+              <g id="blushGroup" opacity="0" style="transition: opacity 0.25s ease;">
+                <ellipse cx="58" cy="148" rx="22" ry="11" fill="#fb7185" opacity="0.55" filter="url(#oledGlow)" />
+                <ellipse cx="262" cy="148" rx="22" ry="11" fill="#fb7185" opacity="0.55" filter="url(#oledGlow)" />
+              </g>
+
+              <!-- Olhar 2.5D -->
+              <g id="faceContent" filter="url(#oledGlow)">
+                <path id="leftBrow" d="" stroke="#00f5ff" stroke-width="6" stroke-linecap="round" fill="none" />
+                <path id="rightBrow" d="" stroke="#00f5ff" stroke-width="6" stroke-linecap="round" fill="none" />
+
+                <g id="leftEyeSlot" transform="translate(92, 108)">
+                  <ellipse id="leftEyeMain" cx="0" cy="0" rx="21" ry="25" fill="#00f5ff" />
+                  <circle id="leftEyeGlint" cx="-6" cy="-8" r="5" fill="#ffffff" opacity="0.85" />
+                  <path id="leftEyeShape" d="" stroke="#00f5ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                  <ellipse id="leftTear" cx="12" cy="24" rx="5" ry="7" fill="#93c5fd" opacity="0" />
+                </g>
+
+                <g id="rightEyeSlot" transform="translate(228, 108)">
+                  <ellipse id="rightEyeMain" cx="0" cy="0" rx="21" ry="25" fill="#00f5ff" />
+                  <circle id="rightEyeGlint" cx="-6" cy="-8" r="5" fill="#ffffff" opacity="0.85" />
+                  <path id="rightEyeShape" d="" stroke="#00f5ff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                  <ellipse id="rightTear" cx="-12" cy="24" rx="5" ry="7" fill="#93c5fd" opacity="0" />
+                </g>
+
+                <g id="mouthSlot" transform="translate(160, 176)">
+                  <path id="mouthPath" d="M -22 0 Q 0 6 22 0" stroke="#00f5ff" stroke-width="6.5" stroke-linecap="round" fill="none" />
+                  <rect id="mouthTalkRect" x="-22" y="-4" width="44" height="8" rx="4" fill="#00f5ff" opacity="0" />
+                </g>
+
+                <g id="thinkDots" opacity="0" transform="translate(268, 42)">
+                  <circle id="td1" cx="-14" cy="0" r="4" fill="#38bdf8" />
+                  <circle id="td2" cx="0" cy="0" r="4" fill="#38bdf8" />
+                  <circle id="td3" cx="14" cy="0" r="4" fill="#38bdf8" />
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="bezel-controls">
+            <button class="bezel-btn mic-on" id="btnBezelMic">🎤</button>
+            <button class="bezel-btn" id="btnBezelSettings">⚙️</button>
+          </div>
+        </div>
+
+        <div class="feet-row interactive">
+          <div class="servo-foot interactive" id="footLeft"></div>
+          <div class="servo-foot interactive" id="footRight"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const petRig = document.getElementById('petRig');
+    const oledScreen = document.getElementById('oledScreen');
+    const blushGroup = document.getElementById('blushGroup');
+    const scanBeam = document.getElementById('scanBeam');
+    const leftEyeSlot = document.getElementById('leftEyeSlot');
+    const rightEyeSlot = document.getElementById('rightEyeSlot');
+    const leftBrow = document.getElementById('leftBrow');
+    const rightBrow = document.getElementById('rightBrow');
+    const leftEyeShape = document.getElementById('leftEyeShape');
+    const rightEyeShape = document.getElementById('rightEyeShape');
+    const leftEyeMain = document.getElementById('leftEyeMain');
+    const rightEyeMain = document.getElementById('rightEyeMain');
+    const leftEyeGlint = document.getElementById('leftEyeGlint');
+    const rightEyeGlint = document.getElementById('rightEyeGlint');
+    const leftTear = document.getElementById('leftTear');
+    const rightTear = document.getElementById('rightTear');
+    const thinkDots = document.getElementById('thinkDots');
+    const mouthSlot = document.getElementById('mouthSlot');
+    const mouthPath = document.getElementById('mouthPath');
+    const mouthTalkRect = document.getElementById('mouthTalkRect');
+    const footLeft = document.getElementById('footLeft');
+    const footRight = document.getElementById('footRight');
+    const scaleWrapper = document.getElementById('scaleWrapper');
+    const exportContainer = document.getElementById('exportContainer');
+
+    const EMOTION_THEMES = {
+      NORMAL:    { color: '#00f5ff', glow: 'rgba(0, 245, 255, 0.22)', blush: 0 },
+      HAPPY:     { color: '#00f5ff', glow: 'rgba(0, 245, 255, 0.28)', blush: 0.7 },
+      EXCITED:   { color: '#38bdf8', glow: 'rgba(250, 204, 21, 0.35)', blush: 0.85 },
+      LOVE:      { color: '#fb7185', glow: 'rgba(251, 113, 133, 0.40)', blush: 1.0 },
+      SAD:       { color: '#60a5fa', glow: 'rgba(96, 165, 250, 0.22)', blush: 0 },
+      ANGRY:     { color: '#f87171', glow: 'rgba(248, 113, 113, 0.35)', blush: 0.4 },
+      SURPRISED: { color: '#38bdf8', glow: 'rgba(56, 189, 248, 0.35)', blush: 0.3 },
+      CURIOUS:   { color: '#22d3ee', glow: 'rgba(34, 211, 238, 0.30)', blush: 0.2 },
+      LAUGHING:  { color: '#34d399', glow: 'rgba(52, 211, 153, 0.32)', blush: 0.9 },
+      DIZZY:     { color: '#facc15', glow: 'rgba(250, 204, 21, 0.30)', blush: 0.5 },
+      SLEEPY:    { color: '#a78bfa', glow: 'rgba(167, 139, 250, 0.16)', blush: 0.3 },
+      LISTENING: { color: '#34d399', glow: 'rgba(52, 211, 153, 0.35)', blush: 0.2 },
+      THINKING:  { color: '#38bdf8', glow: 'rgba(56, 189, 248, 0.26)', blush: 0 },
+      COOL:      { color: '#38bdf8', glow: 'rgba(236, 72, 153, 0.38)', blush: 0.35 },
+      DEAD:      { color: '#94a3b8', glow: 'rgba(148, 163, 184, 0.12)', blush: 0 },
+    };
+
+    function setFace(emo, lookX = 0, lookY = 0) {
+      const theme = EMOTION_THEMES[emo] || EMOTION_THEMES.NORMAL;
+      const col = theme.color;
+
+      oledScreen.style.setProperty('--glow-color', theme.glow);
+      blushGroup.setAttribute('opacity', `${theme.blush}`);
+      scanBeam.classList.remove('scanning');
+
+      const lx = 92 + lookX;
+      const rx = 228 + lookX;
+      const ey = 108 + lookY;
+      leftEyeSlot.setAttribute('transform', `translate(${lx.toFixed(1)}, ${ey.toFixed(1)})`);
+      rightEyeSlot.setAttribute('transform', `translate(${rx.toFixed(1)}, ${ey.toFixed(1)})`);
+
+      leftBrow.setAttribute('d', '');
+      rightBrow.setAttribute('d', '');
+      leftBrow.setAttribute('stroke', col);
+      rightBrow.setAttribute('stroke', col);
+      leftEyeShape.setAttribute('d', '');
+      rightEyeShape.setAttribute('d', '');
+      leftEyeShape.setAttribute('stroke', col);
+      rightEyeShape.setAttribute('stroke', col);
+      leftEyeShape.setAttribute('fill', 'none');
+      rightEyeShape.setAttribute('fill', 'none');
+      leftEyeMain.setAttribute('fill', col);
+      rightEyeMain.setAttribute('fill', col);
+      leftTear.setAttribute('opacity', '0');
+      rightTear.setAttribute('opacity', '0');
+      thinkDots.setAttribute('opacity', emo === 'THINKING' ? '1' : '0');
+
+      let showSolidEyes = true;
+      let eyeRxL = 20, eyeRyL = 25, eyeRxR = 20, eyeRyR = 25;
+
+      switch (emo) {
+        case 'HAPPY':
+          showSolidEyes = false;
+          leftEyeShape.setAttribute('d', 'M -20 6 Q 0 -18 20 6');
+          rightEyeShape.setAttribute('d', 'M -20 6 Q 0 -18 20 6');
+          break;
+
+        case 'LOVE':
+          showSolidEyes = false;
+          const heartPath = 'M 0 14 C -24 -2, -26 -20, -11 -20 C -4 -20, 0 -13, 0 -9 C 0 -13, 4 -20, 11 -20 C 26 -20, 24 -2, 0 14 Z';
+          leftEyeShape.setAttribute('d', heartPath);
+          rightEyeShape.setAttribute('d', heartPath);
+          leftEyeShape.setAttribute('fill', '#fb7185');
+          rightEyeShape.setAttribute('fill', '#fb7185');
+          leftEyeShape.setAttribute('stroke-width', '2');
+          rightEyeShape.setAttribute('stroke-width', '2');
+          break;
+
+        case 'EXCITED':
+          showSolidEyes = false;
+          const star = 'M 0 -24 L 6 -6 L 24 0 L 6 6 L 0 24 L -6 6 L -24 0 L -6 -6 Z';
+          leftEyeShape.setAttribute('d', star);
+          rightEyeShape.setAttribute('d', star);
+          leftEyeShape.setAttribute('fill', '#fde047');
+          rightEyeShape.setAttribute('fill', '#fde047');
+          leftEyeShape.setAttribute('stroke', '#38bdf8');
+          rightEyeShape.setAttribute('stroke', '#38bdf8');
+          leftEyeShape.setAttribute('stroke-width', '3');
+          rightEyeShape.setAttribute('stroke-width', '3');
+          leftBrow.setAttribute('d', `M ${lx - 22} ${ey - 34} Q ${lx} ${ey - 44} ${lx + 20} ${ey - 32}`);
+          rightBrow.setAttribute('d', `M ${rx - 20} ${ey - 32} Q ${rx} ${ey - 44} ${rx + 22} ${ey - 34}`);
+          break;
+
+        case 'LAUGHING':
+          showSolidEyes = false;
+          leftEyeShape.setAttribute('d', 'M -18 -12 L 16 0 L -18 12');
+          rightEyeShape.setAttribute('d', 'M 18 -12 L -16 0 L 18 12');
+          break;
+
+        case 'SAD':
+          eyeRxL = 20; eyeRyL = 21; eyeRxR = 20; eyeRyR = 21;
+          leftBrow.setAttribute('d', `M ${lx - 24} ${ey - 24} Q ${lx} ${ey - 32} ${lx + 20} ${ey - 38}`);
+          rightBrow.setAttribute('d', `M ${rx - 20} ${ey - 38} Q ${rx} ${ey - 32} ${rx + 24} ${ey - 24}`);
+          leftTear.setAttribute('cy', '22');
+          rightTear.setAttribute('cy', '22');
+          leftTear.setAttribute('opacity', '0.9');
+          rightTear.setAttribute('opacity', '0.9');
+          break;
+
+        case 'ANGRY':
+          eyeRxL = 21; eyeRyL = 16; eyeRxR = 21; eyeRyR = 16;
+          leftBrow.setAttribute('d', `M ${lx - 24} ${ey - 34} L ${lx + 22} ${ey - 18}`);
+          rightBrow.setAttribute('d', `M ${rx - 22} ${ey - 18} L ${rx + 24} ${ey - 34}`);
+          break;
+
+        case 'SURPRISED':
+          showSolidEyes = false;
+          leftEyeShape.setAttribute('d', 'M -23 0 A 23 26 0 1 0 23 0 A 23 26 0 1 0 -23 0 M -4 0 A 4 4 0 1 0 4 0 A 4 4 0 1 0 -4 0');
+          rightEyeShape.setAttribute('d', 'M -23 0 A 23 26 0 1 0 23 0 A 23 26 0 1 0 -23 0 M -4 0 A 4 4 0 1 0 4 0 A 4 4 0 1 0 -4 0');
+          leftBrow.setAttribute('d', `M ${lx - 20} ${ey - 38} Q ${lx} ${ey - 48} ${lx + 20} ${ey - 38}`);
+          rightBrow.setAttribute('d', `M ${rx - 20} ${ey - 38} Q ${rx} ${ey - 48} ${rx + 20} ${ey - 38}`);
+          break;
+
+        case 'CURIOUS':
+          eyeRxL = 16; eyeRyL = 19;
+          eyeRxR = 24; eyeRyR = 28;
+          rightBrow.setAttribute('d', `M ${rx - 22} ${ey - 38} Q ${rx} ${ey - 48} ${rx + 22} ${ey - 36}`);
+          break;
+
+        case 'DIZZY':
+          showSolidEyes = false;
+          const spiral = 'M 0 0 m -4 0 a 4 4 0 1 0 8 0 a 9 9 0 1 0 -18 0 a 15 15 0 1 0 30 0 a 20 20 0 1 0 -40 0';
+          leftEyeShape.setAttribute('d', spiral);
+          rightEyeShape.setAttribute('d', spiral);
+          leftEyeShape.setAttribute('stroke-width', '4.5');
+          rightEyeShape.setAttribute('stroke-width', '4.5');
+          leftEyeShape.setAttribute('transform', 'rotate(45)');
+          rightEyeShape.setAttribute('transform', 'rotate(-45)');
+          break;
+
+        case 'SLEEPY':
+          showSolidEyes = false;
+          leftEyeShape.setAttribute('d', 'M -19 4 Q 0 12 19 4');
+          rightEyeShape.setAttribute('d', 'M -19 4 Q 0 12 19 4');
+          break;
+
+        case 'LISTENING':
+          eyeRxL = 22; eyeRyL = 27; eyeRxR = 22; eyeRyR = 27;
+          break;
+
+        case 'THINKING':
+          eyeRxL = 19; eyeRyL = 22; eyeRxR = 19; eyeRyR = 22;
+          document.getElementById('td1').setAttribute('cy', '0');
+          document.getElementById('td2').setAttribute('cy', '-3');
+          document.getElementById('td3').setAttribute('cy', '2');
+          break;
+
+        case 'COOL':
+          showSolidEyes = false;
+          const shadeLens = 'M -28 -10 L 28 -10 L 22 14 Q 0 18 -22 14 Z';
+          leftEyeShape.setAttribute('d', shadeLens);
+          rightEyeShape.setAttribute('d', shadeLens);
+          leftEyeShape.setAttribute('fill', '#0ea5e9');
+          rightEyeShape.setAttribute('fill', '#ec4899');
+          leftEyeShape.setAttribute('stroke', '#f8fafc');
+          rightEyeShape.setAttribute('stroke', '#f8fafc');
+          leftEyeShape.setAttribute('stroke-width', '3.5');
+          rightEyeShape.setAttribute('stroke-width', '3.5');
+          leftBrow.setAttribute('d', `M ${lx + 24} ${ey - 8} L ${rx - 24} ${ey - 8}`);
+          leftBrow.setAttribute('stroke', '#f8fafc');
+          break;
+
+        case 'DEAD':
+          showSolidEyes = false;
+          const xEye = 'M -17 -17 L 17 17 M 17 -17 L -17 17';
+          leftEyeShape.setAttribute('d', xEye);
+          rightEyeShape.setAttribute('d', xEye);
+          leftEyeShape.setAttribute('stroke', '#f87171');
+          rightEyeShape.setAttribute('stroke', '#f87171');
+          leftEyeShape.setAttribute('stroke-width', '6.5');
+          rightEyeShape.setAttribute('stroke-width', '6.5');
+          break;
+      }
+
+      if (emo !== 'DIZZY') {
+        leftEyeShape.removeAttribute('transform');
+        rightEyeShape.removeAttribute('transform');
+      }
+
+      if (showSolidEyes) {
+        leftEyeMain.setAttribute('opacity', '1');
+        rightEyeMain.setAttribute('opacity', '1');
+        leftEyeMain.setAttribute('rx', `${eyeRxL}`);
+        leftEyeMain.setAttribute('ry', `${eyeRyL}`);
+        rightEyeMain.setAttribute('rx', `${eyeRxR}`);
+        rightEyeMain.setAttribute('ry', `${eyeRyR}`);
+        leftEyeGlint.setAttribute('opacity', '0.85');
+        rightEyeGlint.setAttribute('opacity', '0.85');
+      } else {
+        leftEyeMain.setAttribute('opacity', '0');
+        rightEyeMain.setAttribute('opacity', '0');
+        leftEyeGlint.setAttribute('opacity', '0');
+        rightEyeGlint.setAttribute('opacity', '0');
+      }
+
+      // Boca
+      mouthSlot.setAttribute('transform', `translate(${160 + lookX * 0.45}, 176)`);
+      mouthPath.setAttribute('stroke', col);
+      mouthTalkRect.setAttribute('opacity', '0');
+      mouthPath.setAttribute('opacity', '1');
+      mouthPath.setAttribute('fill', 'none');
+
+      if (emo === 'HAPPY' || emo === 'LOVE') {
+        mouthPath.setAttribute('d', 'M -24 -3 Q 0 18 24 -3');
+      } else if (emo === 'EXCITED' || emo === 'LAUGHING') {
+        mouthPath.setAttribute('d', 'M -26 -5 Q 0 26 26 -5 Z');
+        mouthPath.setAttribute('fill', col);
+      } else if (emo === 'SAD') {
+        mouthPath.setAttribute('d', 'M -22 10 Q 0 -8 22 10');
+      } else if (emo === 'ANGRY') {
+        mouthPath.setAttribute('d', 'M -22 6 L -10 -2 L 0 6 L 10 -2 L 22 6');
+      } else if (emo === 'SURPRISED') {
+        mouthPath.setAttribute('d', 'M -10 0 A 10 12 0 1 0 10 0 A 10 12 0 1 0 -10 0');
+      } else if (emo === 'DIZZY') {
+        mouthPath.setAttribute('d', 'M -26 2 Q -13 -10 0 2 T 26 2');
+      } else if (emo === 'SLEEPY') {
+        mouthPath.setAttribute('d', 'M -8 2 A 6 6 0 1 0 8 2 A 6 6 0 1 0 -8 2');
+      } else if (emo === 'COOL') {
+        mouthPath.setAttribute('d', 'M -18 2 Q 2 14 24 -4');
+      } else if (emo === 'DEAD') {
+        mouthPath.setAttribute('d', 'M -20 4 L 20 4 M 4 4 Q 10 18 16 4');
+      } else if (emo === 'LISTENING') {
+        mouthPath.setAttribute('d', 'M -15 0 Q 0 10 15 0');
+      } else {
+        mouthPath.setAttribute('d', 'M -20 -1 Q 0 8 20 -1');
+      }
+    }
+
+    function clearParticles() {
+      document.querySelectorAll('.fx-static-particle').forEach(e => e.remove());
+    }
+
+    function addParticle(text, x, y) {
+      const p = document.createElement('div');
+      p.className = 'fx-static-particle';
+      p.innerText = text;
+      p.style.left = `${x}px`;
+      p.style.top = `${y}px`;
+      exportContainer.appendChild(p);
+    }
+
+    window.applyPose = function(config) {
+      clearParticles();
+      oledScreen.classList.remove('oled-focus');
+      scaleWrapper.style.display = 'block';
+
+      const skin = config.skin || 'classic';
+      petRig.setAttribute('data-skin', skin);
+
+      setFace(config.emotion || 'NORMAL', config.lookX || 0, config.lookY || 0);
+
+      if (config.rigTransform) {
+        petRig.style.transform = config.rigTransform;
+      } else {
+        petRig.style.transform = 'none';
+      }
+
+      if (config.footLeft) {
+        footLeft.style.transform = config.footLeft;
+      } else {
+        footLeft.style.transform = 'none';
+      }
+
+      if (config.footRight) {
+        footRight.style.transform = config.footRight;
+      } else {
+        footRight.style.transform = 'none';
+      }
+
+      if (config.particles && Array.isArray(config.particles)) {
+        config.particles.forEach(pt => addParticle(pt.text, pt.x, pt.y));
+      }
+    };
+
+    window.applyOledCloseUp = function(emotion) {
+      clearParticles();
+      scaleWrapper.style.display = 'block';
+      oledScreen.classList.add('oled-focus');
+      petRig.setAttribute('data-skin', 'cyber');
+      setFace(emotion, 0, 0);
+      petRig.style.transform = 'none';
+      footLeft.style.transform = 'none';
+      footRight.style.transform = 'none';
+    };
+  </script>
+</body>
+</html>

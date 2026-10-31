@@ -1,0 +1,16 @@
+{
+  "name": "stackchan-desktop-pet",
+  "version": "1.0.0",
+  "description": "Stack-chan Desktop Companion Pet with Ollama AI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^45.1.0"
+  },
+  "dependencies": {
+    "onnxruntime-web": "^1.31.1",
+    "sherpa-onnx-node": "^2.0.1"
+  }
+}

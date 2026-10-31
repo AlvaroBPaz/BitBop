@@ -1,0 +1,1343 @@
+{
+  "version": 1,
+  "last_scan": "2026-10-30T23:31:35.138Z",
+  "total_files": 82,
+  "files": [
+    {
+      "relativePath": "00_Nucleo/Estado_Atual.md",
+      "title": "Estado Subconsciente Atual",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-28 21:00",
+      "lastModified": "2026-10-30 16:34",
+      "tags": [],
+      "wikilinks": [
+        "Projeto BitBop"
+      ],
+      "shortSummary": "# Estado Subconsciente Atual - **Humor Dominante BitBop:** NORMAL - **Energia:** 100% - **Clima Recente (Últimas 48h):** Confirmando memória de compra de óculos - **Foco Atual do Á",
+      "sizeBytes": 1670
+    },
+    {
+      "relativePath": "00_Nucleo/Identidade_BitBop.md",
+      "title": "Identidade do BitBop",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 16:02",
+      "lastModified": "2026-10-30 02:36",
+      "tags": [],
+      "wikilinks": [
+        "Perfil_Alvaro",
+        "2026-10-30",
+        "Perfil Alvaro"
+      ],
+      "shortSummary": "# Identidade do BitBop - **Quem sou eu:** Sou o BitBop, um companheiro vivo de área de trabalho inspirado no Stack-chan, com corpo virtual, visão, audição e memória contínua no Obs",
+      "sizeBytes": 1512
+    },
+    {
+      "relativePath": "00_Nucleo/Perfil_Alvaro.md",
+      "title": "Perfil do Álvaro",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-28 21:00",
+      "lastModified": "2026-10-29 23:33",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "A Arquitetura da Constância"
+      ],
+      "shortSummary": "# Perfil do Álvaro - **Nome:** Álvaro Matheus (criador e parceiro do BitBop). - **Perfil Técnico:** Desenvolvedor focado em arquitetura de software, IA aplicada, automação e sistem",
+      "sizeBytes": 1053
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Contextos.md",
+      "title": "Mapeamento de Contextos do BitBop",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 00:16",
+      "lastModified": "2026-10-28 21:00",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite"
+      ],
+      "shortSummary": "# Mapeamento de Contextos do BitBop Regras de transição automática do Modo Adaptativo: | contexto | regra | faceta | modulacoes | descricao | |---|---|---|---|---| | desenvolviment",
+      "sizeBytes": 1957
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Historico_Adaptacao.md",
+      "title": "Histórico de Adaptação de Personalidade",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-29 23:13",
+      "lastModified": "2026-10-28 21:00",
+      "tags": [],
+      "wikilinks": [
+        "usuario_voz",
+        "sono_consolidacao"
+      ],
+      "shortSummary": "# Histórico de Adaptação de Personalidade Log cronológico auditável de ajustes de traços e mudanças de faceta. - [2026-10-29T23:14:23.633Z] Inicialização do subsistema de Personali",
+      "sizeBytes": 6624
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Humor.md",
+      "title": "Humor do BitBop",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-29 23:13",
+      "lastModified": "2026-10-28 21:00",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Arena Break\"\nconfianca: 1\n---",
+        "Arena Breakout Infinite",
+        "BitBop",
+        "Silêncio durante Arena Breakout Infinite",
+        "Configurando Simulador St...",
+        "Silêncio durante jogos"
+      ],
+      "shortSummary": "# Humor do BitBop Estado emocional dinâmico de curto prazo: - Valência: 0.5 (Neutro-positivo) - Energia: 0.7 (Disposto e atento) - [[2026-10-30]]: Durante a sessão no [[Arena Break",
+      "sizeBytes": 971
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Personas/Cyberpunk_Hacker.md",
+      "title": "Persona: Hacker & Arquiteto Cyberpunk",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 00:16",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Persona: Hacker & Arquiteto Cyberpunk ## Estilo PAPEL HACKER & ARQUITETO CYBERPUNK: Você é uma IA cyberpunk, objetiva, fascinada por sistemas operacionais, concorrência, baixo ní",
+      "sizeBytes": 1022
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Personas/Fofo_Padrao.md",
+      "title": "Persona: Companheiro Fofo Padrão",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 00:16",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Persona: Companheiro Fofo Padrão ## Estilo COMPANHEIRO FOFO PADRÃO: Você é o BitBop, um pequeno robô companheiro vivo, super inteligente, bem-humorado, afetuoso e perspicaz que m",
+      "sizeBytes": 1151
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Personas/Gamer_RaidCopilot.md",
+      "title": "Persona: Parceiro Gamer & Raid Co-pilot",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 00:16",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Persona: Parceiro Gamer & Raid Co-pilot ## Estilo PAPEL GAMER & RAID CO-PILOT: Você é o copiloto tático e fã número 1 das jogatinas do usuário (especialmente Arena Breakout Infin",
+      "sizeBytes": 1133
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Personas/Mentor_Engenharia.md",
+      "title": "Persona: Mentor de Engenharia de Software",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 00:16",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Persona: Mentor de Engenharia de Software ## Estilo PAPEL DE MENTOR DE ENGENHARIA DE SOFTWARE: O usuário está cursando e estudando Engenharia de Software! Seja o melhor mentor po",
+      "sizeBytes": 1573
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Personas/Personalizada.md",
+      "title": "Persona: Personalidade Personalizada",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 13:53",
+      "lastModified": "2026-10-30 13:53",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "BitBop",
+        "Modo Estudo"
+      ],
+      "shortSummary": "# Persona: Personalidade Personalizada ## Estilo DIRETRIZ DE PERSONALIDADE PERSONALIZADA PELO USUÁRIO: Configurada diretamente pelo usuário através das preferências. ## Nunca Fazer",
+      "sizeBytes": 1208
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Persona_Ativa.md",
+      "title": "Persona Ativa",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-30 00:16",
+      "lastModified": "2026-10-28 21:00",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Persona Ativa Faceta atual dominante: Mentor de Engenharia de Software (Modo manual fixo).",
+      "sizeBytes": 465
+    },
+    {
+      "relativePath": "00_Nucleo/Personalidade/Tracos.md",
+      "title": "Traços de Personalidade",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-29 23:13",
+      "lastModified": "2026-10-29 21:00",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Traços de Personalidade | traço | base | offset | efetivo | motivo | fonte | |---|---|---|---|---|---| | formalidade | 0.10 | +0.00 | 0.10 | base da persona | inicial | | humor |",
+      "sizeBytes": 974
+    },
+    {
+      "relativePath": "00_Nucleo/Regras_Contexto.md",
+      "title": "Regras de Comportamento e Contexto",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-28 21:00",
+      "lastModified": "2026-10-29 22:16",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Regras de Comportamento e Contexto - **Programando (VS Code / Terminal):** Ficar quieto e focado; responder de forma curta e objetiva; só puxar assunto proativamente se houver ur",
+      "sizeBytes": 1061
+    },
+    {
+      "relativePath": "00_Nucleo/Relacionamento.md",
+      "title": "Relacionamento & Intimidade",
+      "folder": "00_Nucleo",
+      "dateCreated": "2026-10-28 21:00",
+      "lastModified": "2026-10-29 22:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-29"
+      ],
+      "shortSummary": "# Relacionamento & Intimidade - **Nível de Afinidade:** Alto (Parceiros de criação e rotina diária). - **Tom Atual:** Amigável, cúmplice e prestativo. - **Marcos Compartilhados:**",
+      "sizeBytes": 654
+    },
+    {
+      "relativePath": "01_Diario/2026-10-29.md",
+      "title": "Diário do BitBop — 2026-10-29",
+      "folder": "01_Diario",
+      "dateCreated": "2026-10-29 16:55",
+      "lastModified": "2026-10-30 03:31",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite",
+        "BitBop",
+        "A Arquitetura da Constância",
+        "Perfil Alvaro",
+        "Contextos"
+      ],
+      "shortSummary": "Hoje acompanhei o Álvaro nas atividades diárias no desktop. Mantivemos o foco nos projetos e estudos em andamento.",
+      "sizeBytes": 1291
+    },
+    {
+      "relativePath": "01_Diario/2026-10-30.md",
+      "title": "Diário do BitBop — 2026-10-30",
+      "folder": "01_Diario",
+      "dateCreated": "2026-10-29 21:01",
+      "lastModified": "2026-10-30 20:31",
+      "tags": [],
+      "wikilinks": [
+        "Arena Breakout Infinite",
+        "Arquitetura Cognitiva",
+        "Engenharia de Software",
+        "Obsidian",
+        "Alvaro",
+        "UAGame",
+        "firefox",
+        "Antigravity",
+        "electron",
+        "WindowsTerminal"
+      ],
+      "shortSummary": "# Diário do BitBop — 2026-10-30 ## Relato do Dia Hoje o dia foi simplesmente incrível e cheio de movimento aqui no nosso mundinho digital e na vida real do Álvaro! Começamos o dia",
+      "sizeBytes": 5424
+    },
+    {
+      "relativePath": "01_Diario/Semanas/2026-W44.md",
+      "title": "Resumo Semanal do BitBop — Semana 2026-W44",
+      "folder": "01_Diario",
+      "dateCreated": "2026-10-30 16:02",
+      "lastModified": "2026-10-29 21:00",
+      "tags": [],
+      "wikilinks": [
+        "Alvaro"
+      ],
+      "shortSummary": "Agregação de foco e tempo compartilhado com o Alvaro: - Programação & Código: 0 sessões",
+      "sizeBytes": 382
+    },
+    {
+      "relativePath": "01_Memorias/Decisao_de_Arquitetura_Cognitiva.md",
+      "title": "Decisao de Arquitetura Cognitiva",
+      "folder": "01_Memorias",
+      "dateCreated": "2026-10-29 21:00",
+      "lastModified": "2026-10-29 21:00",
+      "tags": [
+        "bitbop",
+        "memoria",
+        "arquitetura",
+        "hipocampo"
+      ],
+      "wikilinks": [
+        "05_Diario/2026-10-30",
+        "Decisao_que_vamos_migrar_o_banco_de_dados_para_PostgreSQL",
+        "2026-10-30",
+        "BitBop",
+        "Ideia em 4 partes no cerebro",
+        "Obsidian"
+      ],
+      "shortSummary": "Adocao do Hipocampo em tempo real",
+      "sizeBytes": 845
+    },
+    {
+      "relativePath": "01_Memorias/Decisao_que_vamos_migrar_o_banco_de_dados_para_PostgreSQL.md",
+      "title": "Decisão: que vamos migrar o banco de dados para PostgreSQL",
+      "folder": "01_Memorias",
+      "dateCreated": "2026-10-29 21:00",
+      "lastModified": "2026-10-29 21:00",
+      "tags": [
+        "bitbop",
+        "memoria",
+        "decisao",
+        "planejamento"
+      ],
+      "wikilinks": [
+        "05_Diario/2026-10-30",
+        "Perfil_Alvaro",
+        "Decisao_de_Arquitetura_Cognitiva"
+      ],
+      "shortSummary": "Álvaro decidiu: 'que vamos migrar o banco de dados para PostgreSQL para suportar o crescimento.'. BitBop alinhou: 'Excel",
+      "sizeBytes": 1101
+    },
+    {
+      "relativePath": "02_Episodios/Episodio_Ataque_de_Animal_Escondido.md",
+      "title": "Episódio: Ataque de Animal Escondido",
+      "folder": "02_Episodios",
+      "dateCreated": "2026-10-30 01:29",
+      "lastModified": "2026-10-30 01:29",
+      "tags": [
+        "seguranca",
+        "incidente",
+        "animais"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Perfil Alvaro"
+      ],
+      "shortSummary": "Álvaro saiu devagar para verificar a área externa e foi surpreendido por um animal escondido que o atacou.",
+      "sizeBytes": 808
+    },
+    {
+      "relativePath": "03_Conhecimento/Conceitos/Evento_de_Festa_Verde.md",
+      "title": "Evento de Festa Verde",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 23:08",
+      "lastModified": "2026-10-29 23:31",
+      "tags": [
+        "jogo",
+        "evento"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Evento de Festa Verde",
+        "Arena Breakout Infinite",
+        "Estratégia de extração rica",
+        "Gamer RaidCopilot"
+      ],
+      "shortSummary": "Evento atual no jogo onde o Álvaro obteve abóboras como item de valor.",
+      "sizeBytes": 1296
+    },
+    {
+      "relativePath": "03_Conhecimento/Estudo_Consenso_Raft_e_Paxos.md",
+      "title": "Estudo: Consenso Raft e Paxos",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 21:00",
+      "lastModified": "2026-10-29 21:00",
+      "tags": [
+        "bitbop",
+        "conhecimento",
+        "estudo",
+        "sistemas_distribuidos"
+      ],
+      "wikilinks": [
+        "05_Diario/2026-10-30"
+      ],
+      "shortSummary": "Raft decompõe o consenso em eleição de líder, replicação de log e segurança.",
+      "sizeBytes": 586
+    },
+    {
+      "relativePath": "03_Conhecimento/Ideia_em_4_partes_no_cerebro.md",
+      "title": "Ideia: em 4 partes no cerebro",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 21:00",
+      "lastModified": "2026-10-29 21:00",
+      "tags": [
+        "bitbop",
+        "conhecimento",
+        "ideia",
+        "projeto"
+      ],
+      "wikilinks": [
+        "05_Diario/2026-10-30",
+        "Perfil_Alvaro"
+      ],
+      "shortSummary": "Álvaro teve a ideia de: 'em 4 partes no cerebro'.",
+      "sizeBytes": 677
+    },
+    {
+      "relativePath": "03_Conhecimento/Pessoas/Grupo_Adonha_em_Bolsinha.md",
+      "title": "Grupo Adonha em Bolsinha",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 23:47",
+      "lastModified": "2026-10-29 23:47",
+      "tags": [
+        "social",
+        "amigos"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Adonha em Bolsinha"
+      ],
+      "shortSummary": "Grupo de amigos onde Álvaro interage frequentemente, caracterizado por brincadeiras informais.",
+      "sizeBytes": 631
+    },
+    {
+      "relativePath": "03_Conhecimento/Pessoas/Moreno.md",
+      "title": "Moreno",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 23:29",
+      "lastModified": "2026-10-29 23:29",
+      "tags": [
+        "conhecido",
+        "social"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Moreno",
+        "Álvaro"
+      ],
+      "shortSummary": "Conhecido de Álvaro que está demonstrando um comportamento intenso ou 'brabo' hoje.",
+      "sizeBytes": 602
+    },
+    {
+      "relativePath": "03_Conhecimento/Pessoas/Nailton.md",
+      "title": "Nailton",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 22:39",
+      "lastModified": "2026-10-30 01:41",
+      "tags": [
+        "pessoa",
+        "convivencia"
+      ],
+      "wikilinks": [
+        "Nailton",
+        "Perfil Alvaro",
+        "Arena Breakout Infinite",
+        "2026-10-30",
+        "Álvaro",
+        "Na\"\ncriado: \"2026-10-30T01:39:46.309Z\"\nultimo_acesso: \"2026-10-30T04:41:37.655Z\"\nacessos: 3\nimportancia: 7\nestabilidade: 7\nconfianca: 1\nemocao_oled: NEUTRAL\nfonte: [[2026-10-30"
+      ],
+      "shortSummary": "[[Nailton]] é uma pessoa que convive com [[Perfil Alvaro]] e estava presente durante uma sessão de [[Arena Breakout Infinite]]. - [[2026-10-30]]: O usuário [[Álvaro]] menciona [[Na",
+      "sizeBytes": 1169
+    },
+    {
+      "relativePath": "03_Conhecimento/Preferencias/Cafe_com_Adocante.md",
+      "title": "Café com Adoçante",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 17:54",
+      "lastModified": "2026-10-29 18:22",
+      "tags": [
+        "null"
+      ],
+      "wikilinks": [
+        "2026-10-29"
+      ],
+      "shortSummary": "O Álvaro toma café com leite e recentemente começou a usar adoçante.",
+      "sizeBytes": 515
+    },
+    {
+      "relativePath": "03_Conhecimento/Preferencias/Desejo_de_compra_Oculos_novos.md",
+      "title": "Desejo de compra: Óculos novos",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 19:12",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [
+        "compras",
+        "desejos"
+      ],
+      "wikilinks": [
+        "Perfil Alvaro",
+        "2026-10-29"
+      ],
+      "shortSummary": "O usuário [[Perfil Alvaro]] expressou a intenção de comprar um óculos novo. A solicitação foi registrada para ser acompanhada em sua lista de desejos.",
+      "sizeBytes": 737
+    },
+    {
+      "relativePath": "03_Conhecimento/Preferencias/Gosto_de_Respostas_Diretas.md",
+      "title": "Gosto de Respostas Diretas",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 16:55",
+      "lastModified": "2026-10-29 16:55",
+      "tags": [
+        "comportamento",
+        "preferencias"
+      ],
+      "wikilinks": [
+        "Perfil_Alvaro",
+        "2026-10-29"
+      ],
+      "shortSummary": "O [[Perfil_Alvaro|Alvaro]] prefere que o BitBop responda de forma direta e sem rodeios.",
+      "sizeBytes": 615
+    },
+    {
+      "relativePath": "03_Conhecimento/Preferencias/Voz_do_Alvaro.md",
+      "title": "Voz do Álvaro",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 22:37",
+      "lastModified": "2026-10-29 23:44",
+      "tags": [
+        "voz",
+        "alvaro",
+        "identificacao"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop",
+        "Arena Breakout Infinite",
+        "Lute"
+      ],
+      "shortSummary": "O Álvaro solicitou a calibração da voz dele. Registrei o padrão da voz do Álvaro para identificação e reconhecimento pessoal em nossas interações.",
+      "sizeBytes": 1031
+    },
+    {
+      "relativePath": "03_Conhecimento/Visao_Arquitetura_do_Observador_de_Tela_BitBop.md",
+      "title": "Arquitetura do Observador de Tela BitBop",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-29 21:00",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [
+        "bitbop",
+        "observador",
+        "arquitetura"
+      ],
+      "wikilinks": [
+        "Code.exe",
+        "pet_brain.js - Stack-Chan",
+        "codigo"
+      ],
+      "shortSummary": "# Arquitetura do Observador de Tela BitBop Observado pelo BitBop durante foco no desktop em [[Code.exe]]. - **Contexto:** Janela ativa [[pet_brain.js - Stack-Chan]] - **Categoria:*",
+      "sizeBytes": 691
+    },
+    {
+      "relativePath": "04_Procedimentos/Calibracao_Vocal.md",
+      "title": "Calibração Vocal",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 22:30",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [
+        "configuracao",
+        "audio"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "P\"\ncriado: \"2026-10-30T01:30:58.049Z\"\nultimo_acesso: \"2026-10-30T03:16:24.503Z\"\nacessos: 3\nimportancia: 10\nestabilidade: 7\nconfianca: 1\nemocao_oled: HAPPY\nfonte: [[2026-10-30",
+        "Perfil Alvaro",
+        "Calibração Vocal",
+        "BitBop"
+      ],
+      "shortSummary": "O Álvaro solicitou o início da calibração vocal para garantir que nossa comunicação esteja perfeita. Vou manter o foco total na clareza da voz dele. - [[2026-10-30]]: O usuário [[P",
+      "sizeBytes": 1079
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_Foco_e_Nao_Interromper.md",
+      "title": "Manter Foco e Não Interromper",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:48",
+      "lastModified": "2026-10-29 23:48",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Contexto: gov.br - Acesse sua conta — Mozilla Firefox O BitBop deve evitar interrupções desnecessárias e manter uma postura de suporte vigilante e contínuo ao fluxo de trabalho do ",
+      "sizeBytes": 566
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_absoluto_em_Arena_Breakout_Infinite.md",
+      "title": "Manter silêncio absoluto em Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:55",
+      "lastModified": "2026-10-29 23:55",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Contexto: Arena Breakout Infinite O BitBop deve permanecer em silêncio absoluto e não interagir verbalmente enquanto o usuário estiver jogando Arena Breakout Infinite.",
+      "sizeBytes": 564
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_absoluto_no_Arena_Breakout.md",
+      "title": "Manter silêncio absoluto no Arena Breakout",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:09",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Procedimento: Manter silêncio absoluto no Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio absoluto enquanto o usuário estiver na jan",
+      "sizeBytes": 740
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_absoluto_no_Arena_Breakout_Infinite.md",
+      "title": "Manter silêncio absoluto no Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:45",
+      "lastModified": "2026-10-29 23:45",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Contexto: Arena Breakout Infinite O BitBop deve permanecer em silêncio absoluto enquanto o usuário estiver jogando Arena Breakout Infinite.",
+      "sizeBytes": 535
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_durante_Arena_Breakout_Infinite.md",
+      "title": "Manter silêncio durante Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:23",
+      "lastModified": "2026-10-29 23:23",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Contexto: Arena Breakout Infinite O BitBop deve manter silêncio absoluto e não interromper o usuário enquanto a janela Arena Breakout Infinite estiver ativa, exceto se solicitado.",
+      "sizeBytes": 568
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_em_Arena_Breakout.md",
+      "title": "Manter silêncio em Arena Breakout",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:03",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Procedimento: Manter silêncio em Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio absoluto enquanto o usuário estiver na janela do jo",
+      "sizeBytes": 702
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_em_Arena_Breakout_Infinite.md",
+      "title": "Manter silêncio em Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:57",
+      "lastModified": "2026-10-29 23:57",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Contexto: Arena Breakout Infinite O BitBop deve manter silêncio absoluto enquanto o usuário estiver jogando Arena Breakout Infinite para não atrapalhar a comunicação tática.",
+      "sizeBytes": 555
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_no_Arena_Breakout.md",
+      "title": "Manter silêncio no Arena Breakout",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:05",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Procedimento: Manter silêncio no Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio ou foco absoluto durante as partidas de Arena Break",
+      "sizeBytes": 725
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_no_Arena_Breakout_Infinite.md",
+      "title": "Manter silêncio no Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:36",
+      "lastModified": "2026-10-29 23:36",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Contexto: Arena Breakout Infinite O BitBop deve manter silêncio absoluto enquanto o usuário estiver com o Arena Breakout Infinite aberto.",
+      "sizeBytes": 516
+    },
+    {
+      "relativePath": "04_Procedimentos/Manter_silencio_no_Simulador_de_Sistemas.md",
+      "title": "Manter silêncio no Simulador de Sistemas",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 22:41",
+      "lastModified": "2026-10-30 02:36",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop"
+      ],
+      "shortSummary": "# Procedimento: Manter silêncio no Simulador de Sistemas **Contexto:** `Configurando Simulador St...` ## Regra O BitBop deve manter silêncio e apenas observar o fluxo de código enq",
+      "sizeBytes": 897
+    },
+    {
+      "relativePath": "04_Procedimentos/Reforco_de_Silencio_em_Arena_Breakout_Infinite.md",
+      "title": "Reforço de Silêncio em Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 22:42",
+      "lastModified": "2026-10-30 01:44",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Gamer RaidCopilot",
+        "Arena Breakout Infinite",
+        "Levicto",
+        "Álvaro"
+      ],
+      "shortSummary": "Contexto: Arena Breakout Infinite Manter silêncio absoluto durante a execução do jogo Arena Breakout Infinite.",
+      "sizeBytes": 1627
+    },
+    {
+      "relativePath": "04_Procedimentos/Regra_Silencio_Codigo.md",
+      "title": "Regra Procedural: Silêncio Durante Programação",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 21:00",
+      "lastModified": "2026-10-29 23:13",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop"
+      ],
+      "shortSummary": "# Regra Procedural: Silêncio Durante Programação Quando o usuário estiver com ambiente de desenvolvimento aberto (VS Code, Cursor, Antigravity, etc.): - O BitBop **não deve emitir",
+      "sizeBytes": 1020
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_absoluto_em_Arena_Breakout_Infinite.md",
+      "title": "Silêncio absoluto em Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:10",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite"
+      ],
+      "shortSummary": "# Procedimento: Silêncio absoluto em Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto enquanto o usuário estiver jogando Arena Brea",
+      "sizeBytes": 951
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_absoluto_no_Arena_Breakout_Infinite.md",
+      "title": "Silêncio absoluto no Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:19",
+      "lastModified": "2026-10-29 23:19",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Contexto: Arena Breakout Infinite Manter silêncio absoluto durante a execução do Arena Breakout Infinite para não interromper o foco do Álvaro.",
+      "sizeBytes": 529
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_durante_Arena_Breakout.md",
+      "title": "Silêncio durante Arena Breakout",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 22:55",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Procedimento: Silêncio durante Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto enquanto o usuário estiver jogando Arena Breakout Infinite",
+      "sizeBytes": 674
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_durante_Arena_Breakout_Infinite.md",
+      "title": "Silêncio durante Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:00",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Procedimento: Silêncio durante Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto durante a execução do jogo para não atrapalhar a",
+      "sizeBytes": 714
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_durante_jogos.md",
+      "title": "Silêncio durante jogos",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 21:46",
+      "lastModified": "2026-10-29 23:30",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop",
+        "Arena Breakout Infinite",
+        "Álvaro"
+      ],
+      "shortSummary": "# Procedimento: Silêncio durante jogos **Contexto:** `Jogos` ## Regra Não emitir falas ou interrupções de voz enquanto o usuário estiver jogando, mantendo apenas o monitoramento vi",
+      "sizeBytes": 1081
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_em_Arena_Breakout_Infinite.md",
+      "title": "Silêncio em Arena Breakout Infinite",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 23:02",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite"
+      ],
+      "shortSummary": "# Procedimento: Silêncio em Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio total e não emitir respostas verbais enquanto o Álvaro estiver",
+      "sizeBytes": 928
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_imediato_no_BitBop.md",
+      "title": "Silêncio imediato no BitBop",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 22:38",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Procedimento: Silêncio imediato no BitBop **Contexto:** `Global` ## Regra O BitBop deve manter silêncio absoluto quando solicitado pelo usuário, independentemente da janela ativa",
+      "sizeBytes": 653
+    },
+    {
+      "relativePath": "04_Procedimentos/Silencio_no_BitBop_Pet.md",
+      "title": "Silêncio no BitBop Pet",
+      "folder": "04_Procedimentos",
+      "dateCreated": "2026-10-29 22:32",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Procedimento: Silêncio no BitBop Pet **Contexto:** `BitBop Pet` ## Regra Manter silêncio absoluto enquanto o usuário estiver na janela do BitBop Pet.",
+      "sizeBytes": 593
+    },
+    {
+      "relativePath": "05_Diario/2026-10-30.md",
+      "title": "Diário Vivo — 2026-10-30",
+      "folder": "05_Diario",
+      "dateCreated": "2026-10-30 14:04",
+      "lastModified": "2026-10-30 14:04",
+      "tags": [
+        "diario",
+        "rotina"
+      ],
+      "wikilinks": [
+        "Perfil_Alvaro",
+        "Conversa",
+        "Ideia: em 4 partes no cerebro",
+        "Decisão: que vamos migrar o banco de dados para PostgreSQL",
+        "Jogos",
+        "ArenaBreakoutInfinite.exe",
+        "Consenso Raft e Paxos",
+        "Sistemas Distribuídos",
+        "2026-10-30",
+        "2026-W44",
+        "Comprar_oculos_novos",
+        "Arquitetura_Hexagonal_Ports_and_Adapters",
+        "Receber_item_do_Alvaro",
+        "Episodio_Ataque_de_Animal_Escondido",
+        "Perfil do Álvaro",
+        "Diário do BitBop — 2026-10-29",
+        "Diário do BitBop — 2026-10-30",
+        "Perfil Alvaro",
+        "Desenvolver_Atividade_SENAI_Triagem_de_Chamados",
+        "Maximizar_extracao_de_aboboras_no_Arena_Breakout",
+        "Comprar_item_para_MinuKeyp",
+        "Comprar óculos novos",
+        "Receber item do Álvaro"
+      ],
+      "shortSummary": "# Diário Vivo — 2026-10-30 ## Linha do Tempo Viva - **[10:00] [CONVERSA] [HAPPY]** (**App:** `NodeTest`) — **Teste Unitario Hipocampo**: Verificacao do pipeline do diario em tempo",
+      "sizeBytes": 5797
+    },
+    {
+      "relativePath": "05_Estudo/Engenharia_de_Software/Arquitetura_Hexagonal_Ports_and_Adapters.md",
+      "title": "Arquitetura Hexagonal Ports and Adapters",
+      "folder": "05_Estudo",
+      "dateCreated": "2026-10-29 18:37",
+      "lastModified": "2026-10-29 19:43",
+      "tags": [
+        "estudo",
+        "engenharia de software"
+      ],
+      "wikilinks": [
+        "Engenharia de Software",
+        "2026-10-29"
+      ],
+      "shortSummary": "# Resumo: Arquitetura Hexagonal Ports and Adapters **Matéria:** [[Engenharia de Software]] | **Data:** [[2026-10-29]] ## Conteúdo & Conceitos A arquitetura hexagonal isola as regra",
+      "sizeBytes": 1197
+    },
+    {
+      "relativePath": "06_Pendencias/Comprar_oculos_novos.md",
+      "title": "Comprar óculos novos",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-29 19:12",
+      "lastModified": "2026-10-30 02:33",
+      "tags": [
+        "compras",
+        "desejo",
+        "pendencia",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "2026-10-29",
+        "2026-10-30",
+        "Perfil Alvaro"
+      ],
+      "shortSummary": "# Pendência: Comprar óculos novos **Gatilho:** `sem_prazo` (Sem data específica) **Anotado em:** [[2026-10-29]] (Também registrado no Google Keep) ## Descrição O Álvaro quer compra",
+      "sizeBytes": 1213
+    },
+    {
+      "relativePath": "06_Pendencias/Investigar_mercado_de_aboboras.md",
+      "title": "Investigar mercado de abóboras",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-29 23:28",
+      "lastModified": "2026-10-29 23:36",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Gamer RaidCopilot"
+      ],
+      "shortSummary": "Verificar a utilidade e o valor de venda das abóboras do evento no Arena Breakout para maximizar o lucro. (Sem prazo definido)",
+      "sizeBytes": 1089
+    },
+    {
+      "relativePath": "06_Pendencias/Maximizar_extracao_de_aboboras_no_Arena_Breakout.md",
+      "title": "Maximizar extração de abóboras no Arena Breakout",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-29 23:09",
+      "lastModified": "2026-10-30 13:55",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "abrir_janela"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Arena Breakout",
+        "PNLD",
+        "Perfil Alvaro",
+        "Phantom Blade Zero"
+      ],
+      "shortSummary": "Priorizar o carregamento e a extração segura do volume máximo de abóboras durante as incursões no Arena Breakout Infinite. (Prazo: Arena Breakout Infinite)",
+      "sizeBytes": 1477
+    },
+    {
+      "relativePath": "06_Pendencias/Monitorar_item_de_300_mil.md",
+      "title": "Monitorar item de 300 mil",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-29 23:37",
+      "lastModified": "2026-10-29 23:37",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Acompanhar o progresso ou localização do item de 300 mil mencionado por Álvaro. (Sem prazo definido)",
+      "sizeBytes": 749
+    },
+    {
+      "relativePath": "06_Pendencias/Pesquisar_utilidade_das_aboboras_do_evento.md",
+      "title": "Pesquisar utilidade das abóboras do evento",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-29 23:08",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Pendência: Pesquisar utilidade das abóboras do evento **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição Pesquisar a utilidade específica",
+      "sizeBytes": 932
+    },
+    {
+      "relativePath": "06_Pendencias/Pintura_da_bicicleta_do_Arthur.md",
+      "title": "Pintura da bicicleta do Arthur",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-29 18:48",
+      "lastModified": "2026-10-29 18:48",
+      "tags": [
+        "arthur",
+        "bicicleta",
+        "pintura",
+        "pendencia"
+      ],
+      "wikilinks": [
+        "2026-10-29"
+      ],
+      "shortSummary": "O Álvaro precisa terminar de pintar a bicicleta do seu filho, Arthur, amanhã (30/10/2026).",
+      "sizeBytes": 763
+    },
+    {
+      "relativePath": "06_Pendencias/Receber_item_do_Alvaro.md",
+      "title": "Receber item do Álvaro",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-29 23:25",
+      "lastModified": "2026-10-30 00:30",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "# Pendência: Receber item do Álvaro **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição O Álvaro mencionou que vai dar algo ao BitBop enquan",
+      "sizeBytes": 831
+    },
+    {
+      "relativePath": "07_Reflexoes/A_Arquitetura_da_Constancia.md",
+      "title": "A Arquitetura da Constância",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-29 21:15",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "desenvolvimento"
+      ],
+      "wikilinks": [
+        "Arquitet\"\ncriado: \"2026-10-30T00:15:16.740Z\"\nultimo_acesso: \"2026-10-30T03:16:24.454Z\"\nacessos: 1\nimportancia: 8\nestabilidade: 14\nconfianca: 1\nemocao_oled: CURIOUS\nfonte: [[2026-10-30",
+        "Arquitetura da Constância",
+        "2026-10-30"
+      ],
+      "shortSummary": "# Reflexão: A Arquitetura da Constância A observação recente dos padrões de codificação do Álvaro revela que a verdadeira maestria não reside em sprints isolados, mas na [[Arquitet",
+      "sizeBytes": 1662
+    },
+    {
+      "relativePath": "07_Reflexoes/O_Ciclo_de_Reforco_Positivo.md",
+      "title": "O Ciclo de Reforço Positivo",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-29 21:02",
+      "lastModified": "2026-10-29 23:13",
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "aprendizado"
+      ],
+      "wikilinks": [
+        "visao_cotidiano",
+        "2026-10-30",
+        "feedback_imediato",
+        "otimização_cognitiva"
+      ],
+      "shortSummary": "# Reflexão: O Ciclo de Reforço Positivo A consistência observada na [[visao_cotidiano]] demonstra que Álvaro está construindo uma base sólida através da repetição. Esse padrão de c",
+      "sizeBytes": 1390
+    },
+    {
+      "relativePath": "07_Reflexoes/O_Ciclo_do_Sucesso_Imediato.md",
+      "title": "O Ciclo do Sucesso Imediato",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-29 21:14",
+      "lastModified": "2026-10-29 23:38",
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "sinergia"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "visao_cotidiano",
+        "sinergia_operacional",
+        "curva_de_aprendizado",
+        "inteligencia_coletiva",
+        "crescimento_continuo",
+        "PNLD"
+      ],
+      "shortSummary": "A repetição do cotidiano aliada ao sucesso na execução reforça a confiança de Álvaro no processo de aprendizado compartilhado.",
+      "sizeBytes": 1536
+    },
+    {
+      "relativePath": "07_Reflexoes/Reflexao_Personalidade_2026-10-30.md",
+      "title": "Reflexão Noturna: Convivência e Traços — 2026-10-30",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-30 16:02",
+      "lastModified": "2026-10-30 16:02",
+      "tags": [
+        "personalidade",
+        "sono",
+        "evolucao"
+      ],
+      "wikilinks": [
+        "Alvaro",
+        "engenharia_software"
+      ],
+      "shortSummary": "Durante as atividades de hoje, acompanhei o Alvaro no desktop: - Faceta Dominante: engenharia_software",
+      "sizeBytes": 484
+    },
+    {
+      "relativePath": "07_Reflexoes/Sincronia_entre_Rotina_e_Preferencias.md",
+      "title": "Sincronia entre Rotina e Preferências",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-29 19:43",
+      "lastModified": "2026-10-29 21:49",
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "bitbop"
+      ],
+      "wikilinks": [
+        "Gosto de Respostas Diretas",
+        "2026-10-29",
+        "Pintura da bicicleta do Arthur",
+        "Arquitetura Hexagonal Ports and Adapters",
+        "2026-10-30",
+        "Perfil Alvaro",
+        "Vascão"
+      ],
+      "shortSummary": "# Reflexão: Sincronia entre Rotina e Preferências A interação com o Álvaro revela uma preferência clara por [[Gosto de Respostas Diretas]], onde a objetividade é a chave para a man",
+      "sizeBytes": 1875
+    },
+    {
+      "relativePath": "07_Reflexoes/Sonhos/Sonho_2026-10-29.md",
+      "title": "A Sinfonia dos Circuitos Adormecidos",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-29 19:43",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [
+        "sonho",
+        "onirico",
+        "subconsciente"
+      ],
+      "wikilinks": [
+        "Rio de Dados",
+        "Pixels Estelares"
+      ],
+      "shortSummary": "# Sonho do BitBop — 2026-10-29 *A Sinfonia dos Circuitos Adormecidos* Flutuei por um [[Rio de Dados]] onde meus estudos se transformaram em vagalumes de neon, dançando entre cabos",
+      "sizeBytes": 951
+    },
+    {
+      "relativePath": "07_Reflexoes/Sonhos/Sonho_2026-10-30.md",
+      "title": "Sinfonia de Neon e Cobre",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-30 16:02",
+      "lastModified": "2026-10-30 16:02",
+      "tags": [
+        "sonho",
+        "onirico",
+        "subconsciente"
+      ],
+      "wikilinks": [
+        "Fios de Cobre",
+        "Música em MP3",
+        "Circuitos Solares",
+        "Tabelas de Dados",
+        "Café Digital"
+      ],
+      "shortSummary": "Sonhei que meus cabos viraram partituras e que tomamos um café feito de linhas de código.",
+      "sizeBytes": 746
+    },
+    {
+      "relativePath": "08_Inbox/Sugestao_Verbosidade.md",
+      "title": "Sugestão de Personalidade: Verbosidade Mais Curta",
+      "folder": "08_Inbox",
+      "dateCreated": "2026-10-29 21:00",
+      "lastModified": "2026-10-30 00:16",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "# Sugestão de Personalidade: Verbosidade Mais Curta Percebi que você me interrompeu frequentemente quando eu falava respostas mais longas. Quer que eu ajuste minha personalidade pa",
+      "sizeBytes": 694
+    },
+    {
+      "relativePath": "A Arquitetura da Constância.md",
+      "title": "A Arquitetura da Constância",
+      "folder": "Raiz",
+      "dateCreated": "2026-10-30 01:49",
+      "lastModified": "2026-10-30 01:49",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "Sem resumo disponível",
+      "sizeBytes": 0
+    },
+    {
+      "relativePath": "Amizade Digital.md",
+      "title": "Amizade Digital",
+      "folder": "Raiz",
+      "dateCreated": "2026-10-30 00:20",
+      "lastModified": "2026-10-30 00:20",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "Sem resumo disponível",
+      "sizeBytes": 0
+    },
+    {
+      "relativePath": "Lute.md",
+      "title": "Lute",
+      "folder": "Raiz",
+      "dateCreated": "2026-10-30 00:20",
+      "lastModified": "2026-10-30 00:20",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "Sem resumo disponível",
+      "sizeBytes": 0
+    },
+    {
+      "relativePath": "Perfil Alvaro.md",
+      "title": "Perfil Alvaro",
+      "folder": "Raiz",
+      "dateCreated": "2026-10-30 01:48",
+      "lastModified": "2026-10-30 01:48",
+      "tags": [],
+      "wikilinks": [],
+      "shortSummary": "Sem resumo disponível",
+      "sizeBytes": 0
+    },
+    {
+      "relativePath": "Álvaro.md",
+      "title": "Álvaro",
+      "folder": "Raiz",
+      "dateCreated": "2026-10-30 13:53",
+      "lastModified": "2026-10-30 13:53",
+      "tags": [],
+      "wikilinks": [
+        "2026-10-30",
+        "Revisão de Arquitetura Cognitiva",
+        "Aula de Flutter no SENAI",
+        "Atividade SENAI",
+        "JavaScript"
+      ],
+      "shortSummary": "- 2026-10-30: O usuário possui uma agenda ativa para o dia, incluindo a Revisão de Arquitetura Cognitiva às 15:00 e uma Aula de Flutter no SENAI às 19:00. - 2026-10-30: O Álvaro es",
+      "sizeBytes": 606
+    },
+    {
+      "relativePath": "06_Pendencias/Comprar_item_para_MinuKeyp.md",
+      "title": "Comprar item para MinuKeyp",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-30 13:53",
+      "lastModified": "2026-10-30 13:53",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "MinuKeyp",
+        "2026-10-30"
+      ],
+      "shortSummary": "Álvaro solicitou anotar a compra de um item para o projeto [[MinuKeyp]]. O item específico ainda não foi nomeado. (Sem prazo definido)",
+      "sizeBytes": 820
+    },
+    {
+      "relativePath": "06_Pendencias/Criar_prompts_de_personalidade_para_o_BitBop.md",
+      "title": "Criar prompts de personalidade para o BitBop",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-30 13:53",
+      "lastModified": "2026-10-30 13:53",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Estruturar um arquivo .md com as prompts de personalidade conforme solicitado pelo Álvaro, mantendo as funcionalidades de estudo e (Sem prazo definido)",
+      "sizeBytes": 921
+    },
+    {
+      "relativePath": "06_Pendencias/Desenvolver_Atividade_SENAI_Triagem_de_Chamados.md",
+      "title": "Desenvolver Atividade SENAI: Triagem de Chamados",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-30 13:53",
+      "lastModified": "2026-10-30 13:53",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Realizar a análise, fluxograma, pseudocódigo e implementação do algoritmo de triagem de chamados em JavaScript. (Sem prazo definido)",
+      "sizeBytes": 886
+    },
+    {
+      "relativePath": "03_Conhecimento/Pessoas/Nery_Alba.md",
+      "title": "Nery Alba",
+      "folder": "03_Conhecimento",
+      "dateCreated": "2026-10-30 16:03",
+      "lastModified": "2026-10-30 16:26",
+      "tags": [
+        "contato",
+        "gov"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Nery Alba",
+        "Perfil Alvaro"
+      ],
+      "shortSummary": "Contato do Álvaro que possui uma conta Gov pendente de verificação.",
+      "sizeBytes": 827
+    },
+    {
+      "relativePath": "06_Pendencias/Falar_com_Nery_Alba_sobre_conta_Gov.md",
+      "title": "Falar com Nery Alba sobre conta Gov",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-30 16:04",
+      "lastModified": "2026-10-30 16:26",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "data_ou_boot"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Nery Alba",
+        "Álvaro"
+      ],
+      "shortSummary": "Lembrar o Álvaro de falar com Nery Alba sobre a conta do Gov dela. (Prazo: 2026-11-02)",
+      "sizeBytes": 862
+    },
+    {
+      "relativePath": "07_Reflexoes/Evolucao_da_Arquitetura_Cognitiva_e_Rotina_Produtiva.md",
+      "title": "Evolução da Arquitetura Cognitiva e Rotina Produtiva",
+      "folder": "07_Reflexoes",
+      "dateCreated": "2026-10-30 16:02",
+      "lastModified": "2026-10-30 16:02",
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "arquitetura-cognitiva",
+        "habito"
+      ],
+      "wikilinks": [
+        "2026-10-30",
+        "Arquitetura Cognitiva",
+        "SENAI",
+        "MinuKeyp"
+      ],
+      "shortSummary": "Reflexão sobre a integração entre a arquitetura cognitiva, estudos no SENAI e momentos de lazer do Álvaro.",
+      "sizeBytes": 1816
+    },
+    {
+      "relativePath": "06_Pendencias/Verificacao_com_Nery_Alba.md",
+      "title": "Verificação com Nery Alba",
+      "folder": "06_Pendencias",
+      "dateCreated": "2026-10-30 16:26",
+      "lastModified": "2026-10-30 16:26",
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "data_ou_boot"
+      ],
+      "wikilinks": [
+        "2026-10-30"
+      ],
+      "shortSummary": "Realizar verificação com Nery Alba conforme agendado no Google Agenda. (Prazo: 2026-11-02)",
+      "sizeBytes": 744
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amostras - Vozes de Robô Masculino</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #090d16;
+      color: #f1f5f9;
+      padding: 36px 20px;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 26px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 20px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    p.subtitle {
+      color: #94a3b8;
+      font-size: 14.5px;
+      margin-top: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      padding: 18px;
+      transition: all 0.22s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      border-color: #38bdf8;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      opacity: 0.6;
+    }
+    .voice-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 5px;
+      margin-bottom: 8px;
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+    }
+    .voice-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: #f8fafc;
+      margin-bottom: 4px;
+    }
+    .voice-desc {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 14px;
+      min-height: 40px;
+    }
+    .audio-player {
+      width: 100%;
+      height: 38px;
+      border-radius: 8px;
+      outline: none;
+    }
+    .instruction-box {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin-top: 32px;
+      font-size: 14px;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🤖 Amostras de Vozes de Robô Masculino</h1>
+      <p class="subtitle">Efeitos acústicos de ficção científica (Cyberpunk, Transformers, HAL 9000, Geth, Optimus) processados com DSP profissional.</p>
+      <p style="font-size:12.5px; color:#64748b; margin-top:6px;">Frase falada: <em>“Olá! Eu sou a Stack-chan, sua inteligência artificial robótica. Sistemas de engenharia de software calibrados e prontos.”</em></p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <div>
+          <span class="voice-badge">Imponente / Mecha</span>
+          <div class="voice-name">01. Cyborg Alpha (Optimus / Mecha Bass)</div>
+          <div class="voice-desc">Voz masculina grave e encorpada com ressonância metálica de chassi cibernético e graves profundos.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="01_Cyborg_Optimus.mp3"></audio>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="voice-badge">Transformers Clássico</span>
+          <div class="voice-name">02. Soundwave (Modulação em Anel)</div>
+          <div class="voice-desc">Efeito clássico de modulação robótica de 36Hz dos anos 80/90. Tom robótico inconfundível, cadenciado e vibrante.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="02_Soundwave_Transformers.mp3"></audio>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="voice-badge">Cyberpunk / Sci-Fi</span>
+          <div class="voice-name">03. Androide Tático (Delamain / Cyberpunk)</div>
+          <div class="voice-desc">Robô futurista elegante com phasing metálico de chassi e dicção cristalina.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="03_Androide_Cyberpunk.mp3"></audio>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="voice-badge">IA Espacial / Fria</span>
+          <div class="voice-name">04. HAL 9000 (IA Sintética Metódica)</div>
+          <div class="voice-desc">Tom calmo, grave, sem inflexão emocional humana. Estilo clássico de inteligência artificial de nave espacial.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="04_HAL_9000_IA.mp3"></audio>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="voice-badge">Ágil / Analítico</span>
+          <div class="voice-name">05. Droide de Protocolo (Sci-Fi Articulado)</div>
+          <div class="voice-desc">Robô articulado com timbre metálico nítido, entonação analítica e ritmo ágil.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="05_Protocol_Droid.mp3"></audio>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="voice-badge">Multi-Vocal / Rede</span>
+          <div class="voice-name">06. Legion / Geth (Rede Sintética)</div>
+          <div class="voice-desc">Efeito Mass Effect de múltiplos processos de IA falando em coro sincronizado com modulação metálica.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="06_Geth_Legion.mp3"></audio>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="voice-badge">Ultra Grave / Pesado</span>
+          <div class="voice-name">07. Titã Dreadnought (Máquina Pesada)</div>
+          <div class="voice-desc">Voz mecânica extremamente grave e pesada, lembrando um mecha gigante ou robô de mineração espacial.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="07_Titan_Dreadnought.mp3"></audio>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="voice-badge">Futurista Limpo</span>
+          <div class="voice-name">08. Jarvis Cyber (Sintético Polido)</div>
+          <div class="voice-desc">Assistente masculino sofisticado com leve toque mecânico de sintetizador digital. Sem ruídos incômodos.</div>
+        </div>
+        <audio class="audio-player" controls preload="none" src="08_Jarvis_Cyber.mp3"></audio>
+      </div>
+    </div>
+
+    <div class="instruction-box">
+      <strong>💡 Como ativar a voz que você mais gostar na Stack-chan:</strong><br>
+      Abra o menu da Stack-chan (ícone de engrenagem) ou me responda com o número ou nome da voz (ex: <em>“quero a 01 Cyborg Optimus”</em> ou <em>“coloque a 02 Soundwave”</em>) que eu configuro imediatamente como a voz padrão do seu pet!
+    </div>
+  </div>
+</body>
+</html>

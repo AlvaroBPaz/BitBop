@@ -1,0 +1,22 @@
+{
+  "aiProvider": "gemini",
+  "geminiModel": "gemini-3.5-flash-lite",
+  "geminiApiKey": "SUA_CHAVE_GEMINI_AQUI",
+  "groqApiKey": "SUA_CHAVE_GROQ_AQUI",
+  "sttMode": "groq-whisper-turbo",
+  "petScale": 0.5,
+  "roamEnabled": true,
+  "proximityChat": true,
+  "bargeInEnabled": true,
+  "bubbleEnabled": false,
+  "voiceEnabled": true,
+  "voice": "protocol_droid",
+  "personality": "padrao",
+  "customPersonality": "\n",
+  "micSensitivity": "media",
+  "studyMode": false,
+  "googleCalendarWebhookUrl": "https://script.google.com/macros/s/SEU_ID_DE_IMPLANTACAO/exec",
+  "googleKeepWebhookUrl": "https://script.google.com/macros/s/SEU_ID_DE_IMPLANTACAO/exec",
+  "observerInterval": 5,
+  "observerMaxReaction": "all"
+}

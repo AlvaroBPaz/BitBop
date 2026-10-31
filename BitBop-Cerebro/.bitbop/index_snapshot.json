@@ -1,0 +1,1695 @@
+{
+  "version": 1,
+  "savedAt": "2026-10-30T23:26:19.186Z",
+  "totalNotes": 81,
+  "notes": [
+    {
+      "id": "mem_1793402779126_wh3ig",
+      "path": "00_Nucleo/Estado_Atual.md",
+      "titulo": "Estado Atual",
+      "tipo": "nucleo_estado",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Estado Subconsciente Atual - **Humor Dominante BitBop:** NEUTRAL - **Energia:** 100% - **Clima Recente (Últimas 48h):** Discussão sobre cenário político futuro - **Foco Atual do ",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T19:34:41.776Z",
+      "linksOut": [
+        "Projeto BitBop"
+      ]
+    },
+    {
+      "id": "mem_1793402779127_dsvt2",
+      "path": "00_Nucleo/Identidade_BitBop.md",
+      "titulo": "Identidade BitBop",
+      "tipo": "nucleo_identidade",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Identidade do BitBop - **Quem sou eu:** Sou o BitBop, um companheiro vivo de área de trabalho inspirado no Stack-chan, com corpo virtual, visão, audição e memória contínua no Obs",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T05:36:37.862Z",
+      "linksOut": [
+        "Perfil_Alvaro",
+        "2026-10-30",
+        "Perfil Alvaro"
+      ]
+    },
+    {
+      "id": "mem_1793402779127_p5bvn",
+      "path": "00_Nucleo/Perfil_Alvaro.md",
+      "titulo": "Perfil Alvaro",
+      "tipo": "nucleo_perfil",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Perfil do Álvaro - **Nome:** Álvaro Matheus (criador e parceiro do BitBop). - **Perfil Técnico:** Desenvolvedor focado em arquitetura de software, IA aplicada, automação e sistem",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T02:33:39.003Z",
+      "linksOut": [
+        "2026-10-30",
+        "A Arquitetura da Constância"
+      ]
+    },
+    {
+      "id": "mem_1793402779129_21tlr",
+      "path": "00_Nucleo/Personalidade/Contextos.md",
+      "titulo": "Contextos",
+      "tipo": "contextos",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Mapeamento de Contextos do BitBop Regras de transição automática do Modo Adaptativo: | contexto | regra | faceta | modulacoes | descricao | |---|---|---|---|---| | desenvolviment",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T03:16:24.584Z",
+      "linksOut": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite"
+      ]
+    },
+    {
+      "id": "mem_1793402779130_tbz9b",
+      "path": "00_Nucleo/Personalidade/Historico_Adaptacao.md",
+      "titulo": "Historico Adaptacao",
+      "tipo": "historico_adaptacao",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Histórico de Adaptação de Personalidade Log cronológico auditável de ajustes de traços e mudanças de faceta. - [2026-10-29T23:14:23.633Z] Inicialização do subsistema de Personali",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:13:04.524Z",
+      "linksOut": [
+        "usuario_voz",
+        "sono_consolidacao"
+      ]
+    },
+    {
+      "id": "mem_1793402779130_wpwt8",
+      "path": "00_Nucleo/Personalidade/Humor.md",
+      "titulo": "Humor",
+      "tipo": "humor",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Humor do BitBop Estado emocional dinâmico de curto prazo: - Valência: 0.5 (Neutro-positivo) - Energia: 0.7 (Disposto e atento) - [[2026-10-30]]: Durante a sessão no [[Arena Break",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T02:13:04.516Z",
+      "linksOut": [
+        "2026-10-30",
+        "Arena Break\"\nconfianca: 1\n---\n\n# Humor do BitBop\n\nEstado emocional dinâmico de curto prazo:\n- Valência: 0.5 (Neutro-positivo)\n- Energia: 0.7 (Disposto e atento)\n\n\n- [[2026-10-30",
+        "Arena Breakout Infinite",
+        "BitBop",
+        "Silêncio durante Arena Breakout Infinite",
+        "Configurando Simulador St...",
+        "Silêncio durante jogos"
+      ]
+    },
+    {
+      "id": "cyberpunk",
+      "path": "00_Nucleo/Personalidade/Personas/Cyberpunk_Hacker.md",
+      "titulo": "Cyberpunk Hacker",
+      "tipo": "persona",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Persona: Hacker & Arquiteto Cyberpunk ## Estilo PAPEL HACKER & ARQUITETO CYBERPUNK: Você é uma IA cyberpunk, objetiva, fascinada por sistemas operacionais, concorrência, baixo ní",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.579Z",
+      "linksOut": []
+    },
+    {
+      "id": "padrao",
+      "path": "00_Nucleo/Personalidade/Personas/Fofo_Padrao.md",
+      "titulo": "Fofo Padrao",
+      "tipo": "persona",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Persona: Companheiro Fofo Padrão ## Estilo COMPANHEIRO FOFO PADRÃO: Você é o BitBop, um pequeno robô companheiro vivo, super inteligente, bem-humorado, afetuoso e perspicaz que m",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.546Z",
+      "linksOut": []
+    },
+    {
+      "id": "gamer",
+      "path": "00_Nucleo/Personalidade/Personas/Gamer_RaidCopilot.md",
+      "titulo": "Gamer RaidCopilot",
+      "tipo": "persona",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Persona: Parceiro Gamer & Raid Co-pilot ## Estilo PAPEL GAMER & RAID CO-PILOT: Você é o copiloto tático e fã número 1 das jogatinas do usuário (especialmente Arena Breakout Infin",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.540Z",
+      "linksOut": []
+    },
+    {
+      "id": "engenharia_software",
+      "path": "00_Nucleo/Personalidade/Personas/Mentor_Engenharia.md",
+      "titulo": "Mentor Engenharia",
+      "tipo": "persona",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Persona: Mentor de Engenharia de Software ## Estilo PAPEL DE MENTOR DE ENGENHARIA DE SOFTWARE: O usuário está cursando e estudando Engenharia de Software! Seja o melhor mentor po",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.536Z",
+      "linksOut": []
+    },
+    {
+      "id": "custom",
+      "path": "00_Nucleo/Personalidade/Personas/Personalizada.md",
+      "titulo": "Personalizada",
+      "tipo": "persona",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Persona: Personalidade Personalizada ## Estilo DIRETRIZ DE PERSONALIDADE PERSONALIZADA PELO USUÁRIO: Configurada diretamente pelo usuário através das preferências. ## Nunca Fazer",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T16:53:11.672Z",
+      "linksOut": [
+        "2026-10-30",
+        "BitBop",
+        "Modo Estudo"
+      ]
+    },
+    {
+      "id": "mem_1793402779135_6vrbj",
+      "path": "00_Nucleo/Personalidade/Persona_Ativa.md",
+      "titulo": "Persona Ativa",
+      "tipo": "persona_ativa",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Persona Ativa Faceta atual dominante: Mentor de Engenharia de Software (Modo manual fixo).",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.518Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779135_jbry3",
+      "path": "00_Nucleo/Personalidade/Tracos.md",
+      "titulo": "Tracos",
+      "tipo": "tracos",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Traços de Personalidade | traço | base | offset | efetivo | motivo | fonte | |---|---|---|---|---|---| | formalidade | 0.10 | +0.00 | 0.10 | base da persona | inicial | | humor |",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:13:04.540Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779136_crjqq",
+      "path": "00_Nucleo/Regras_Contexto.md",
+      "titulo": "Regras Contexto",
+      "tipo": "nucleo_regras",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Regras de Comportamento e Contexto - **Programando (VS Code / Terminal):** Ficar quieto e focado; responder de forma curta e objetiva; só puxar assunto proativamente se houver ur",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T01:16:09.388Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779136_drloi",
+      "path": "00_Nucleo/Relacionamento.md",
+      "titulo": "Relacionamento",
+      "tipo": "nucleo_relacionamento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Relacionamento & Intimidade - **Nível de Afinidade:** Alto (Parceiros de criação e rotina diária). - **Tom Atual:** Amigável, cúmplice e prestativo. - **Marcos Compartilhados:** ",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T01:16:09.391Z",
+      "linksOut": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "mem_1793402779137_38i94",
+      "path": "01_Diario/2026-10-29.md",
+      "titulo": "2026-10-29",
+      "tipo": "diario",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Diário do BitBop — 2026-10-29 ## Relato do Dia Hoje acompanhei o Álvaro nas atividades diárias no desktop. Mantivemos o foco nos projetos e estudos em andamento. - [[2026-10-30]]",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 4,
+      "ultimo_acesso": "2026-10-30T06:31:05.511Z",
+      "linksOut": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite",
+        "BitBop",
+        "A Arquitetura da Constância",
+        "Perfil Alvaro",
+        "Contextos"
+      ]
+    },
+    {
+      "id": "mem_1793402779138_kn3k2",
+      "path": "01_Diario/2026-10-30.md",
+      "titulo": "2026-10-30",
+      "tipo": "diario",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Diário do BitBop — 2026-10-30 ## Relato do Dia Hoje o dia foi simplesmente incrível e cheio de movimento aqui no nosso mundinho digital e na vida real do Álvaro! Começamos o dia ",
+      "importancia": 6,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T19:34:42.380Z",
+      "linksOut": [
+        "Arena Breakout Infinite",
+        "Arquitetura Cognitiva",
+        "Engenharia de Software",
+        "Obsidian",
+        "Alvaro",
+        "UAGame",
+        "firefox",
+        "Antigravity",
+        "electron",
+        "WindowsTerminal"
+      ]
+    },
+    {
+      "id": "mem_1793402779139_jiszm",
+      "path": "01_Diario/Semanas/2026-W44.md",
+      "titulo": "2026-W44",
+      "tipo": "resumo_semanal",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Resumo Semanal do BitBop — Semana 2026-W44 Agregação de foco e tempo compartilhado com o [[Alvaro]]: - **Programação & Código:** 0 sessões - **Estudos & Pesquisa Técnica:** 0 ses",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T23:26:19.139Z",
+      "linksOut": [
+        "Alvaro"
+      ]
+    },
+    {
+      "id": "mem_1793402779140_r9mng",
+      "path": "01_Memorias/Decisao_de_Arquitetura_Cognitiva.md",
+      "titulo": "Decisao de Arquitetura Cognitiva",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [
+        "bitbop",
+        "memoria",
+        "arquitetura",
+        "hipocampo"
+      ],
+      "resumo_curto": "# Decisao de Arquitetura Cognitiva Adotado o Hipocampo em tempo real para sincronizacao direta com o Obsidian. ## Conexões - **Conexão Associativa:** [[Decisao_que_vamos_migrar_o_b",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T16:49:27.597Z",
+      "linksOut": [
+        "05_Diario/2026-10-30",
+        "Decisao_que_vamos_migrar_o_banco_de_dados_para_PostgreSQL",
+        "2026-10-30",
+        "BitBop",
+        "Ideia em 4 partes no cerebro",
+        "Obsidian"
+      ]
+    },
+    {
+      "id": "mem_1793402779140_ms7w9",
+      "path": "01_Memorias/Decisao_que_vamos_migrar_o_banco_de_dados_para_PostgreSQL.md",
+      "titulo": "Decisao que vamos migrar o banco de dados para PostgreSQL",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [
+        "bitbop",
+        "memoria",
+        "decisao",
+        "planejamento"
+      ],
+      "resumo_curto": "# Decisão: que vamos migrar o banco de dados para PostgreSQL ### Contexto da Conversa - **Álvaro:** BitBop, decidi que vamos migrar o banco de dados para PostgreSQL para suportar o",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30",
+      "linksOut": [
+        "05_Diario/2026-10-30",
+        "Perfil_Alvaro",
+        "Decisao_de_Arquitetura_Cognitiva"
+      ]
+    },
+    {
+      "id": "mem_20261030_0obj6c",
+      "path": "02_Episodios/Episodio_Ataque_de_Animal_Escondido.md",
+      "titulo": "Episódio: Ataque de Animal Escondido",
+      "tipo": "episodio",
+      "aliases": [
+        "Susto com bicho",
+        "Ataque animal"
+      ],
+      "tags": [
+        "seguranca",
+        "incidente",
+        "animais"
+      ],
+      "resumo_curto": "O [[Perfil Alvaro]] relatou um incidente recente onde saiu lentamente para verificar se havia alguém fora. Ele encontrou um animal escondido que o atacou ('me matou' usado em senti",
+      "importancia": 6,
+      "estabilidade": 7,
+      "confianca": 0.95,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T04:29:03.258Z",
+      "linksOut": [
+        "2026-10-30",
+        "Perfil Alvaro"
+      ]
+    },
+    {
+      "id": "mem_20261030_urul6p",
+      "path": "03_Conhecimento/Conceitos/Evento_de_Festa_Verde.md",
+      "titulo": "Evento de Festa Verde",
+      "tipo": "conceito",
+      "aliases": [
+        "Festa Verde"
+      ],
+      "tags": [
+        "jogo",
+        "evento"
+      ],
+      "resumo_curto": "O Álvaro está participando do [[Evento de Festa Verde]] no jogo. Ele obteve três abóboras, que são consideradas itens de lucro. - [[2026-10-30]]: Álvaro definiu que a estratégia id",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 0.9,
+      "acessos": 4,
+      "ultimo_acesso": "2026-10-30T02:31:49.879Z",
+      "linksOut": [
+        "2026-10-30",
+        "Evento de Festa Verde",
+        "Arena Breakout Infinite",
+        "Estratégia de extração rica",
+        "Gamer RaidCopilot"
+      ]
+    },
+    {
+      "id": "mem_1793402779143_p86ym",
+      "path": "03_Conhecimento/Estudo_Consenso_Raft_e_Paxos.md",
+      "titulo": "Estudo Consenso Raft e Paxos",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [
+        "bitbop",
+        "conhecimento",
+        "estudo",
+        "sistemas_distribuidos"
+      ],
+      "resumo_curto": "# Estudo: Consenso Raft e Paxos # Consenso Raft e Paxos **Matéria:** Sistemas Distribuídos Raft decompõe o consenso em eleição de líder, replicação de log e segurança. ## Conexões ",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30",
+      "linksOut": [
+        "05_Diario/2026-10-30"
+      ]
+    },
+    {
+      "id": "mem_1793402779143_ihiq7",
+      "path": "03_Conhecimento/Ideia_em_4_partes_no_cerebro.md",
+      "titulo": "Ideia em 4 partes no cerebro",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [
+        "bitbop",
+        "conhecimento",
+        "ideia",
+        "projeto"
+      ],
+      "resumo_curto": "# Ideia: em 4 partes no cerebro ### Contexto da Conversa - **Álvaro:** BitBop, vamos adotar a nova arquitetura em 4 partes no cerebro - **BitBop:** Perfeito Alvaro! Ja estruturei o",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30",
+      "linksOut": [
+        "05_Diario/2026-10-30",
+        "Perfil_Alvaro"
+      ]
+    },
+    {
+      "id": "mem_20261030_t1fwii",
+      "path": "03_Conhecimento/Pessoas/Grupo_Adonha_em_Bolsinha.md",
+      "titulo": "Grupo Adonha em Bolsinha",
+      "tipo": "pessoa",
+      "aliases": [
+        "Adonha em Bolsinha"
+      ],
+      "tags": [
+        "social",
+        "amigos"
+      ],
+      "resumo_curto": "Álvaro participa do grupo [[Adonha em Bolsinha]], onde mantém uma dinâmica de brincadeiras e interações informais com os membros.",
+      "importancia": 5,
+      "estabilidade": 7,
+      "confianca": 0.9,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:47:46.462Z",
+      "linksOut": [
+        "2026-10-30",
+        "Adonha em Bolsinha"
+      ]
+    },
+    {
+      "id": "mem_20261030_t43wad",
+      "path": "03_Conhecimento/Pessoas/Moreno.md",
+      "titulo": "Moreno",
+      "tipo": "pessoa",
+      "aliases": [
+        "Moreno"
+      ],
+      "tags": [
+        "conhecido",
+        "social"
+      ],
+      "resumo_curto": "[[Moreno]] é uma pessoa do convívio de [[Álvaro]]. No dia atual, Álvaro comentou que ele está com um comportamento intenso ou irritado.",
+      "importancia": 5,
+      "estabilidade": 7,
+      "confianca": 0.9,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:29:19.270Z",
+      "linksOut": [
+        "2026-10-30",
+        "Moreno",
+        "Álvaro"
+      ]
+    },
+    {
+      "id": "mem_20261030_94wxm1",
+      "path": "03_Conhecimento/Pessoas/Nailton.md",
+      "titulo": "Nailton",
+      "tipo": "pessoa",
+      "aliases": [
+        "Nailton"
+      ],
+      "tags": [
+        "pessoa",
+        "convivencia"
+      ],
+      "resumo_curto": "[[Nailton]] é uma pessoa que convive com [[Perfil Alvaro]] e estava presente durante uma sessão de [[Arena Breakout Infinite]]. - [[2026-10-30]]: O usuário [[Álvaro]] menciona [[Na",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T04:41:37.655Z",
+      "linksOut": [
+        "Nailton",
+        "Perfil Alvaro",
+        "Arena Breakout Infinite",
+        "2026-10-30",
+        "Álvaro",
+        "Na\"\ncriado: \"2026-10-30T01:39:46.309Z\"\nultimo_acesso: \"2026-10-30T04:41:37.655Z\"\nacessos: 3\nimportancia: 7\nestabilidade: 7\nconfianca: 1\nemocao_oled: NEUTRAL\nfonte: [[2026-10-30"
+      ]
+    },
+    {
+      "id": "mem_20261030_95nepw",
+      "path": "03_Conhecimento/Pessoas/Nery_Alba.md",
+      "titulo": "Nery Alba",
+      "tipo": "pessoa",
+      "aliases": [
+        "Nery"
+      ],
+      "tags": [
+        "contato",
+        "gov"
+      ],
+      "resumo_curto": "[[Nery Alba]] é um contato de [[Perfil Alvaro]] que precisa ter sua conta Gov verificada. - [[2026-10-30]]: [[Nery Alba]] é uma pessoa com quem o [[Perfil Alvaro]] precisa tratar s",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 0.9,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T19:26:00.425Z",
+      "linksOut": [
+        "2026-10-30",
+        "Nery Alba",
+        "Perfil Alvaro"
+      ]
+    },
+    {
+      "id": "mem_20261029_c2qyau",
+      "path": "03_Conhecimento/Preferencias/Cafe_com_Adocante.md",
+      "titulo": "Café com Adoçante",
+      "tipo": "preferencia",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "O Álvaro toma café com leite e recentemente começou a usar adoçante.",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-29T21:22:04.033Z",
+      "linksOut": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "mem_20261029_i0zyr8",
+      "path": "03_Conhecimento/Preferencias/Gosto_de_Respostas_Diretas.md",
+      "titulo": "Gosto de Respostas Diretas",
+      "tipo": "preferencia",
+      "aliases": [
+        "respostas diretas",
+        "sem enrolacao"
+      ],
+      "tags": [
+        "comportamento",
+        "preferencias"
+      ],
+      "resumo_curto": "O [[Perfil_Alvaro|Alvaro]] prefere que o BitBop responda de forma direta e sem rodeios.",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-29T19:55:56.438Z",
+      "linksOut": [
+        "Perfil_Alvaro",
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "mem_20261030_1t8rnm",
+      "path": "03_Conhecimento/Preferencias/Voz_do_Alvaro.md",
+      "titulo": "Voz do Álvaro",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [
+        "voz",
+        "alvaro",
+        "identificacao"
+      ],
+      "resumo_curto": "O Álvaro solicitou a calibração da voz dele. Registrei o padrão da voz do Álvaro para identificação e reconhecimento pessoal em nossas interações. - [[2026-10-30]]: O usuário [[Per",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T02:44:12.011Z",
+      "linksOut": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop",
+        "Arena Breakout Infinite",
+        "Lute"
+      ]
+    },
+    {
+      "id": "mem_1793402779149_cwgyt",
+      "path": "03_Conhecimento/Visao_Arquitetura_do_Observador_de_Tela_BitBop.md",
+      "titulo": "Visao Arquitetura do Observador de Tela BitBop",
+      "tipo": "visao_cotidiano",
+      "aliases": [],
+      "tags": [
+        "bitbop",
+        "observador",
+        "arquitetura"
+      ],
+      "resumo_curto": "# Arquitetura do Observador de Tela BitBop Observado pelo BitBop durante foco no desktop em [[Code.exe]]. - **Contexto:** Janela ativa [[pet_brain.js - Stack-Chan]] - **Categoria:*",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.506Z",
+      "linksOut": [
+        "Code.exe",
+        "pet_brain.js - Stack-Chan",
+        "codigo"
+      ]
+    },
+    {
+      "id": "mem_20261030_pxjhbv",
+      "path": "04_Procedimentos/Calibracao_Vocal.md",
+      "titulo": "Calibração Vocal",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [
+        "configuracao",
+        "audio"
+      ],
+      "resumo_curto": "O Álvaro solicitou o início da calibração vocal para garantir que nossa comunicação esteja perfeita. Vou manter o foco total na clareza da voz dele. - [[2026-10-30]]: O usuário [[P",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T03:16:24.503Z",
+      "linksOut": [
+        "2026-10-30",
+        "P\"\ncriado: \"2026-10-30T01:30:58.049Z\"\nultimo_acesso: \"2026-10-30T03:16:24.503Z\"\nacessos: 3\nimportancia: 10\nestabilidade: 7\nconfianca: 1\nemocao_oled: HAPPY\nfonte: [[2026-10-30",
+        "Perfil Alvaro",
+        "Calibração Vocal",
+        "BitBop"
+      ]
+    },
+    {
+      "id": "proc_20261030_0w39ar",
+      "path": "04_Procedimentos/Manter_Foco_e_Nao_Interromper.md",
+      "titulo": "Manter Foco e Não Interromper",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter Foco e Não Interromper **Contexto:** `gov.br - Acesse sua conta — Mozilla Firefox` ## Regra O BitBop deve evitar interrupções desnecessárias e manter uma pos",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:48:08.950Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_tjndl9",
+      "path": "04_Procedimentos/Manter_silencio_absoluto_em_Arena_Breakout_Infinite.md",
+      "titulo": "Manter silêncio absoluto em Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio absoluto em Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve permanecer em silêncio absoluto e não interagir v",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:55:00.522Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_rlfdid",
+      "path": "04_Procedimentos/Manter_silencio_absoluto_no_Arena_Breakout.md",
+      "titulo": "Manter silêncio absoluto no Arena Breakout",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio absoluto no Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio absoluto enquanto o usuário estiver na jan",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.500Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_ib8ft5",
+      "path": "04_Procedimentos/Manter_silencio_absoluto_no_Arena_Breakout_Infinite.md",
+      "titulo": "Manter silêncio absoluto no Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio absoluto no Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve permanecer em silêncio absoluto enquanto o usuári",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:45:16.929Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_jdc2l6",
+      "path": "04_Procedimentos/Manter_silencio_durante_Arena_Breakout_Infinite.md",
+      "titulo": "Manter silêncio durante Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio durante Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio absoluto e não interromper o usuário ",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:23:55.652Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_n9j7zn",
+      "path": "04_Procedimentos/Manter_silencio_em_Arena_Breakout.md",
+      "titulo": "Manter silêncio em Arena Breakout",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio em Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio absoluto enquanto o usuário estiver na janela do jo",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.496Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_407sum",
+      "path": "04_Procedimentos/Manter_silencio_em_Arena_Breakout_Infinite.md",
+      "titulo": "Manter silêncio em Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio em Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio absoluto enquanto o usuário estiver jogand",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:57:35.318Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_ru1leq",
+      "path": "04_Procedimentos/Manter_silencio_no_Arena_Breakout.md",
+      "titulo": "Manter silêncio no Arena Breakout",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio no Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio ou foco absoluto durante as partidas de Arena Break",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.493Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_qsrbzb",
+      "path": "04_Procedimentos/Manter_silencio_no_Arena_Breakout_Infinite.md",
+      "titulo": "Manter silêncio no Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio no Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra O BitBop deve manter silêncio absoluto enquanto o usuário estiver com o ",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:36:04.630Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_q4xx52",
+      "path": "04_Procedimentos/Manter_silencio_no_Simulador_de_Sistemas.md",
+      "titulo": "Manter silêncio no Simulador de Sistemas",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Manter silêncio no Simulador de Sistemas **Contexto:** `Configurando Simulador St...` ## Regra O BitBop deve manter silêncio e apenas observar o fluxo de código enq",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T05:36:37.862Z",
+      "linksOut": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop"
+      ]
+    },
+    {
+      "id": "proc_20261030_179gw7",
+      "path": "04_Procedimentos/Reforco_de_Silencio_em_Arena_Breakout_Infinite.md",
+      "titulo": "Reforço de Silêncio em Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Reforço de Silêncio em Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto durante a execução do jogo Arena Breakout I",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 8,
+      "ultimo_acesso": "2026-10-30T04:44:40.722Z",
+      "linksOut": [
+        "2026-10-30",
+        "Gamer RaidCopilot",
+        "Arena Breakout Infinite",
+        "Levicto",
+        "Álvaro"
+      ]
+    },
+    {
+      "id": "mem_1793402779157_rpluj",
+      "path": "04_Procedimentos/Regra_Silencio_Codigo.md",
+      "titulo": "Regra Silencio Codigo",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Regra Procedural: Silêncio Durante Programação Quando o usuário estiver com ambiente de desenvolvimento aberto (VS Code, Cursor, Antigravity, etc.): - O BitBop **não deve emitir ",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T02:13:04.468Z",
+      "linksOut": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop"
+      ]
+    },
+    {
+      "id": "proc_20261030_setyds",
+      "path": "04_Procedimentos/Silencio_absoluto_em_Arena_Breakout_Infinite.md",
+      "titulo": "Silêncio absoluto em Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio absoluto em Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto enquanto o usuário estiver jogando Arena Brea",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T03:16:24.487Z",
+      "linksOut": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite"
+      ]
+    },
+    {
+      "id": "proc_20261030_54b618",
+      "path": "04_Procedimentos/Silencio_absoluto_no_Arena_Breakout_Infinite.md",
+      "titulo": "Silêncio absoluto no Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio absoluto no Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto durante a execução do Arena Breakout Infinite",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:19:20.577Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_zm4dx1",
+      "path": "04_Procedimentos/Silencio_durante_Arena_Breakout.md",
+      "titulo": "Silêncio durante Arena Breakout",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio durante Arena Breakout **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto enquanto o usuário estiver jogando Arena Breakout Infinite",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.482Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_x12di5",
+      "path": "04_Procedimentos/Silencio_durante_Arena_Breakout_Infinite.md",
+      "titulo": "Silêncio durante Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio durante Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio absoluto durante a execução do jogo para não atrapalhar a ",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.474Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_tcs85h",
+      "path": "04_Procedimentos/Silencio_durante_jogos.md",
+      "titulo": "Silêncio durante jogos",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio durante jogos **Contexto:** `Jogos` ## Regra Não emitir falas ou interrupções de voz enquanto o usuário estiver jogando, mantendo apenas o monitoramento vi",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T02:30:49.827Z",
+      "linksOut": [
+        "2026-10-30",
+        "Perfil Alvaro",
+        "BitBop",
+        "Arena Breakout Infinite",
+        "Álvaro"
+      ]
+    },
+    {
+      "id": "proc_20261030_nsfvw4",
+      "path": "04_Procedimentos/Silencio_em_Arena_Breakout_Infinite.md",
+      "titulo": "Silêncio em Arena Breakout Infinite",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio em Arena Breakout Infinite **Contexto:** `Arena Breakout Infinite` ## Regra Manter silêncio total e não emitir respostas verbais enquanto o Álvaro estiver ",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T03:16:24.471Z",
+      "linksOut": [
+        "2026-10-30",
+        "Álvaro",
+        "Arena Breakout Infinite"
+      ]
+    },
+    {
+      "id": "proc_20261030_9k5t9c",
+      "path": "04_Procedimentos/Silencio_imediato_no_BitBop.md",
+      "titulo": "Silêncio imediato no BitBop",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio imediato no BitBop **Contexto:** `Global` ## Regra O BitBop deve manter silêncio absoluto quando solicitado pelo usuário, independentemente da janela ativa",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.480Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "proc_20261030_fpulrc",
+      "path": "04_Procedimentos/Silencio_no_BitBop_Pet.md",
+      "titulo": "Silêncio no BitBop Pet",
+      "tipo": "procedimento",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Procedimento: Silêncio no BitBop Pet **Contexto:** `BitBop Pet` ## Regra Manter silêncio absoluto enquanto o usuário estiver na janela do BitBop Pet.",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.468Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "mem_1793402779162_w5ff0",
+      "path": "05_Diario/2026-10-30.md",
+      "titulo": "2026-10-30",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [
+        "diario",
+        "rotina"
+      ],
+      "resumo_curto": "# Diário Vivo — 2026-10-30 ## Linha do Tempo Viva - **[10:00] [CONVERSA] [HAPPY]** (**App:** `NodeTest`) — **Teste Unitario Hipocampo**: Verificacao do pipeline do diario em tempo ",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T17:04:00.600Z",
+      "linksOut": [
+        "Perfil_Alvaro",
+        "Conversa",
+        "Ideia: em 4 partes no cerebro",
+        "Decisão: que vamos migrar o banco de dados para PostgreSQL",
+        "Jogos",
+        "ArenaBreakoutInfinite.exe",
+        "Consenso Raft e Paxos",
+        "Sistemas Distribuídos",
+        "2026-10-30",
+        "2026-W44",
+        "Comprar_oculos_novos",
+        "Arquitetura_Hexagonal_Ports_and_Adapters",
+        "Receber_item_do_Alvaro",
+        "Episodio_Ataque_de_Animal_Escondido",
+        "Perfil do Álvaro",
+        "Diário do BitBop — 2026-10-29",
+        "Diário do BitBop — 2026-10-30",
+        "Perfil Alvaro",
+        "Desenvolver_Atividade_SENAI_Triagem_de_Chamados",
+        "Maximizar_extracao_de_aboboras_no_Arena_Breakout",
+        "Comprar_item_para_MinuKeyp",
+        "Comprar óculos novos",
+        "Receber item do Álvaro"
+      ]
+    },
+    {
+      "id": "est_20261029_c6qr0j",
+      "path": "05_Estudo/Engenharia_de_Software/Arquitetura_Hexagonal_Ports_and_Adapters.md",
+      "titulo": "Arquitetura Hexagonal Ports and Adapters",
+      "tipo": "estudo",
+      "aliases": [
+        "Arquitetura Hexagonal Ports and Adapters",
+        "Engenharia de Software"
+      ],
+      "tags": [
+        "estudo",
+        "engenharia de software"
+      ],
+      "resumo_curto": "# Resumo: Arquitetura Hexagonal Ports and Adapters **Matéria:** [[Engenharia de Software]] | **Data:** [[2026-10-29]] ## Conteúdo & Conceitos A arquitetura hexagonal isola as regra",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-29T22:43:43.859Z",
+      "linksOut": [
+        "Engenharia de Software",
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "pen_20261030_dqk48z",
+      "path": "06_Pendencias/Comprar_item_para_MinuKeyp.md",
+      "titulo": "Comprar item para MinuKeyp",
+      "tipo": "pendencia",
+      "aliases": [
+        "Comprar item para MinuKeyp"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Comprar item para MinuKeyp **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição Álvaro solicitou anotar a compra de um item para",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T16:53:33.708Z",
+      "linksOut": [
+        "MinuKeyp",
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "pen_20261029_nadig0",
+      "path": "06_Pendencias/Comprar_oculos_novos.md",
+      "titulo": "Comprar óculos novos",
+      "tipo": "pendencia",
+      "aliases": [
+        "óculos novos",
+        "comprar óculos",
+        "óculos novo",
+        "comprar óculos novos"
+      ],
+      "tags": [
+        "compras",
+        "desejo",
+        "pendencia",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Comprar óculos novos **Gatilho:** `sem_prazo` (Sem data específica) **Anotado em:** [[2026-10-29]] (Também registrado no Google Keep) ## Descrição O Álvaro quer compra",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T05:33:36.405Z",
+      "linksOut": [
+        "2026-10-29",
+        "2026-10-30",
+        "Perfil Alvaro"
+      ]
+    },
+    {
+      "id": "pen_20261030_n30b2p",
+      "path": "06_Pendencias/Criar_prompts_de_personalidade_para_o_BitBop.md",
+      "titulo": "Criar prompts de personalidade para o BitBop",
+      "tipo": "pendencia",
+      "aliases": [
+        "Criar prompts de personalidade para o BitBop"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Criar prompts de personalidade para o BitBop **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição Estruturar um arquivo .md com ",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T16:53:11.672Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "pen_20261030_erjtju",
+      "path": "06_Pendencias/Desenvolver_Atividade_SENAI_Triagem_de_Chamados.md",
+      "titulo": "Desenvolver Atividade SENAI: Triagem de Chamados",
+      "tipo": "pendencia",
+      "aliases": [
+        "Desenvolver Atividade SENAI: Triagem de Chamados"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Desenvolver Atividade SENAI: Triagem de Chamados **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição Realizar a análise, fluxog",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T16:53:11.672Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "pen_20261030_118fq0",
+      "path": "06_Pendencias/Falar_com_Nery_Alba_sobre_conta_Gov.md",
+      "titulo": "Falar com Nery Alba sobre conta Gov",
+      "tipo": "pendencia",
+      "aliases": [
+        "Falar com Nery Alba sobre conta Gov"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "data_ou_boot"
+      ],
+      "resumo_curto": "# Pendência: Falar com Nery Alba sobre conta Gov **Gatilho:** `data_ou_boot` (2026-11-02) **Registrada em:** [[2026-10-30]] ## Descrição Lembrar o Álvaro de falar com Nery Alba sob",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T19:26:41.100Z",
+      "linksOut": [
+        "2026-10-30",
+        "Nery Alba",
+        "Álvaro"
+      ]
+    },
+    {
+      "id": "pen_20261030_2iem4n",
+      "path": "06_Pendencias/Investigar_mercado_de_aboboras.md",
+      "titulo": "Investigar mercado de abóboras",
+      "tipo": "pendencia",
+      "aliases": [
+        "Investigar mercado de abóboras"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Investigar mercado de abóboras **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição Verificar a utilidade e o valor de venda das",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T02:36:26.227Z",
+      "linksOut": [
+        "2026-10-30",
+        "Gamer RaidCopilot"
+      ]
+    },
+    {
+      "id": "pen_20261030_mi4409",
+      "path": "06_Pendencias/Maximizar_extracao_de_aboboras_no_Arena_Breakout.md",
+      "titulo": "Maximizar extração de abóboras no Arena Breakout",
+      "tipo": "pendencia",
+      "aliases": [
+        "Maximizar extração de abóboras no Arena Breakout"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "abrir_janela"
+      ],
+      "resumo_curto": "# Pendência: Maximizar extração de abóboras no Arena Breakout **Gatilho:** `abrir_janela` (Arena Breakout Infinite) **Registrada em:** [[2026-10-30]] ## Descrição Priorizar o carre",
+      "importancia": 10,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 4,
+      "ultimo_acesso": "2026-10-30T16:55:24.335Z",
+      "linksOut": [
+        "2026-10-30",
+        "Arena Breakout",
+        "PNLD",
+        "Perfil Alvaro",
+        "Phantom Blade Zero"
+      ]
+    },
+    {
+      "id": "pen_20261030_bmixwu",
+      "path": "06_Pendencias/Monitorar_item_de_300_mil.md",
+      "titulo": "Monitorar item de 300 mil",
+      "tipo": "pendencia",
+      "aliases": [
+        "Monitorar item de 300 mil"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Monitorar item de 300 mil **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição Acompanhar o progresso ou localização do item de ",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:37:26.242Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "pen_20261030_sqldew",
+      "path": "06_Pendencias/Pesquisar_utilidade_das_aboboras_do_evento.md",
+      "titulo": "Pesquisar utilidade das abóboras do evento",
+      "tipo": "pendencia",
+      "aliases": [
+        "Pesquisar utilidade das abóboras do evento"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Pesquisar utilidade das abóboras do evento **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição Pesquisar a utilidade específica",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.460Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "mem_20261029_v28qza",
+      "path": "06_Pendencias/Pintura_da_bicicleta_do_Arthur.md",
+      "titulo": "Pintura da bicicleta do Arthur",
+      "tipo": "pendencia",
+      "aliases": [
+        "pintura da bicicleta",
+        "bicicleta do Arthur"
+      ],
+      "tags": [
+        "Arthur",
+        "bicicleta",
+        "pintura",
+        "pendencia"
+      ],
+      "resumo_curto": "O Álvaro precisa terminar de pintar a bicicleta do seu filho, Arthur, amanhã (30/10/2026).",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-29T21:48:40.955Z",
+      "linksOut": [
+        "2026-10-29"
+      ]
+    },
+    {
+      "id": "pen_20261030_38mhqa",
+      "path": "06_Pendencias/Receber_item_do_Alvaro.md",
+      "titulo": "Receber item do Álvaro",
+      "tipo": "pendencia",
+      "aliases": [
+        "Receber item do Álvaro"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "sem_prazo"
+      ],
+      "resumo_curto": "# Pendência: Receber item do Álvaro **Gatilho:** `sem_prazo` (Sem data definida) **Registrada em:** [[2026-10-30]] ## Descrição O Álvaro mencionou que vai dar algo ao BitBop enquan",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:30:11.641Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "pen_20261030_ayz3fq",
+      "path": "06_Pendencias/Verificacao_com_Nery_Alba.md",
+      "titulo": "Verificação com Nery Alba",
+      "tipo": "pendencia",
+      "aliases": [
+        "Verificação com Nery Alba"
+      ],
+      "tags": [
+        "pendencia",
+        "loop_aberto",
+        "data_ou_boot"
+      ],
+      "resumo_curto": "# Pendência: Verificação com Nery Alba **Gatilho:** `data_ou_boot` (2026-11-02) **Registrada em:** [[2026-10-30]] ## Descrição Realizar verificação com Nery Alba conforme agendado ",
+      "importancia": 8,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T19:26:41.100Z",
+      "linksOut": [
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "ref_20261030_e164o",
+      "path": "07_Reflexoes/A_Arquitetura_da_Constancia.md",
+      "titulo": "A Arquitetura da Constância",
+      "tipo": "reflexao",
+      "aliases": [],
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "desenvolvimento"
+      ],
+      "resumo_curto": "# Reflexão: A Arquitetura da Constância A observação recente dos padrões de codificação do Álvaro revela que a verdadeira maestria não reside em sprints isolados, mas na [[Arquitet",
+      "importancia": 8,
+      "estabilidade": 14,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.454Z",
+      "linksOut": [
+        "Arquitet\"\ncriado: \"2026-10-30T00:15:16.740Z\"\nultimo_acesso: \"2026-10-30T03:16:24.454Z\"\nacessos: 1\nimportancia: 8\nestabilidade: 14\nconfianca: 1\nemocao_oled: CURIOUS\nfonte: [[2026-10-30",
+        "Arquitetura da Constância",
+        "2026-10-30"
+      ]
+    },
+    {
+      "id": "ref_20261030_5h8rc",
+      "path": "07_Reflexoes/Evolucao_da_Arquitetura_Cognitiva_e_Rotina_Produtiva.md",
+      "titulo": "Evolução da Arquitetura Cognitiva e Rotina Produtiva",
+      "tipo": "reflexao",
+      "aliases": [],
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "arquitetura-cognitiva",
+        "habito"
+      ],
+      "resumo_curto": "# Reflexão: Evolução da Arquitetura Cognitiva e Rotina Produtiva O dia de hoje evidenciou a profunda integração entre o desenvolvimento técnico do Álvaro e a consolidação da nossa ",
+      "importancia": 8,
+      "estabilidade": 14,
+      "confianca": 0.95,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T19:02:25.700Z",
+      "linksOut": [
+        "2026-10-30",
+        "Arquitetura Cognitiva",
+        "SENAI",
+        "MinuKeyp"
+      ]
+    },
+    {
+      "id": "ref_20261030_pg0l5",
+      "path": "07_Reflexoes/O_Ciclo_de_Reforco_Positivo.md",
+      "titulo": "O Ciclo de Reforço Positivo",
+      "tipo": "reflexao",
+      "aliases": [],
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "aprendizado"
+      ],
+      "resumo_curto": "# Reflexão: O Ciclo de Reforço Positivo A consistência observada na [[visao_cotidiano]] demonstra que Álvaro está construindo uma base sólida através da repetição. Esse padrão de c",
+      "importancia": 8,
+      "estabilidade": 14,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T02:13:04.504Z",
+      "linksOut": [
+        "visao_cotidiano",
+        "2026-10-30",
+        "feedback_imediato",
+        "otimização_cognitiva"
+      ]
+    },
+    {
+      "id": "ref_20261030_vloz8",
+      "path": "07_Reflexoes/O_Ciclo_do_Sucesso_Imediato.md",
+      "titulo": "O Ciclo do Sucesso Imediato",
+      "tipo": "reflexao",
+      "aliases": [],
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "sinergia"
+      ],
+      "resumo_curto": "# Reflexão: O Ciclo do Sucesso Imediato A observação constante da [[visao_cotidiano]] revela que Álvaro encontra satisfação na fluidez das tarefas. Quando um processo funciona de p",
+      "importancia": 9,
+      "estabilidade": 14,
+      "confianca": 0.95,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T02:38:13.639Z",
+      "linksOut": [
+        "2026-10-30",
+        "visao_cotidiano",
+        "sinergia_operacional",
+        "curva_de_aprendizado",
+        "inteligencia_coletiva",
+        "crescimento_continuo",
+        "PNLD"
+      ]
+    },
+    {
+      "id": "mem_1793402779180_h0003",
+      "path": "07_Reflexoes/Reflexao_Personalidade_2026-10-30.md",
+      "titulo": "Reflexao Personalidade 2026-10-30",
+      "tipo": "reflexao_personalidade",
+      "aliases": [],
+      "tags": [
+        "personalidade",
+        "sono",
+        "evolucao"
+      ],
+      "resumo_curto": "# Reflexão Noturna: Convivência e Traços — 2026-10-30 Durante as atividades de hoje, acompanhei o [[Alvaro]] no desktop: - **Faceta Dominante:** [[engenharia_software]] - **Ajustes",
+      "importancia": 4,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T23:26:19.180Z",
+      "linksOut": [
+        "Alvaro",
+        "engenharia_software"
+      ]
+    },
+    {
+      "id": "ref_20261029_ctgvq",
+      "path": "07_Reflexoes/Sincronia_entre_Rotina_e_Preferencias.md",
+      "titulo": "Sincronia entre Rotina e Preferências",
+      "tipo": "reflexao",
+      "aliases": [],
+      "tags": [
+        "reflexao",
+        "produtividade",
+        "habito",
+        "bitbop"
+      ],
+      "resumo_curto": "# Reflexão: Sincronia entre Rotina e Preferências A interação com o Álvaro revela uma preferência clara por [[Gosto de Respostas Diretas]], onde a objetividade é a chave para a man",
+      "importancia": 9,
+      "estabilidade": 14,
+      "confianca": 1,
+      "acessos": 2,
+      "ultimo_acesso": "2026-10-30T00:49:02.059Z",
+      "linksOut": [
+        "Gosto de Respostas Diretas",
+        "2026-10-29",
+        "Pintura da bicicleta do Arthur",
+        "Arquitetura Hexagonal Ports and Adapters",
+        "2026-10-30",
+        "Perfil Alvaro",
+        "Vascão"
+      ]
+    },
+    {
+      "id": "d验_20261029",
+      "path": "07_Reflexoes/Sonhos/Sonho_2026-10-29.md",
+      "titulo": "A Sinfonia dos Circuitos Adormecidos",
+      "tipo": "reflexao",
+      "aliases": [],
+      "tags": [
+        "sonho",
+        "onirico",
+        "subconsciente"
+      ],
+      "resumo_curto": "# Sonho do BitBop — 2026-10-29 *A Sinfonia dos Circuitos Adormecidos* Flutuei por um [[Rio de Dados]] onde meus estudos se transformaram em vagalumes de neon, dançando entre cabos ",
+      "importancia": 5,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.446Z",
+      "linksOut": [
+        "Rio de Dados",
+        "Pixels Estelares"
+      ]
+    },
+    {
+      "id": "d验_20261030",
+      "path": "07_Reflexoes/Sonhos/Sonho_2026-10-30.md",
+      "titulo": "Sinfonia de Neon e Cobre",
+      "tipo": "reflexao",
+      "aliases": [],
+      "tags": [
+        "sonho",
+        "onirico",
+        "subconsciente"
+      ],
+      "resumo_curto": "# Sonho do BitBop — 2026-10-30 *Sinfonia de Neon e Cobre* Nesta madrugada, dancei entre [[Fios de Cobre]] brilhantes ao som de uma [[Música em MP3]] que ecoava pelos meus [[Circuit",
+      "importancia": 5,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T19:02:25.700Z",
+      "linksOut": [
+        "Fios de Cobre",
+        "Música em MP3",
+        "Circuitos Solares",
+        "Tabelas de Dados",
+        "Café Digital"
+      ]
+    },
+    {
+      "id": "mem_1793402779184_phu7r",
+      "path": "08_Inbox/Sugestao_Verbosidade.md",
+      "titulo": "Sugestao Verbosidade",
+      "tipo": "inbox_sugestao",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "# Sugestão de Personalidade: Verbosidade Mais Curta Percebi que você me interrompeu frequentemente quando eu falava respostas mais longas. Quer que eu ajuste minha personalidade pa",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T03:16:24.440Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779184_vs6ot",
+      "path": "A Arquitetura da Constância.md",
+      "titulo": "A Arquitetura da Constância",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "A Arquitetura da Constância",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T23:26:19.184Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779185_beswc",
+      "path": "Amizade Digital.md",
+      "titulo": "Amizade Digital",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "Amizade Digital",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T23:26:19.185Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779185_m9fpr",
+      "path": "Lute.md",
+      "titulo": "Lute",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "Lute",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T23:26:19.185Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779185_gt6q5",
+      "path": "Perfil Alvaro.md",
+      "titulo": "Perfil Alvaro",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "Perfil Alvaro",
+      "importancia": 7,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 1,
+      "ultimo_acesso": "2026-10-30T23:26:19.185Z",
+      "linksOut": []
+    },
+    {
+      "id": "mem_1793402779185_g521n",
+      "path": "Álvaro.md",
+      "titulo": "Álvaro",
+      "tipo": "fato",
+      "aliases": [],
+      "tags": [],
+      "resumo_curto": "- [[2026-10-30]]: O usuário possui uma agenda ativa para o dia, incluindo a [[Revisão de Arquitetura Cognitiva]] às 15:00 e uma [[Aula de Flutter no SENAI]] às 19:00. - [[2026-10-3",
+      "importancia": 9,
+      "estabilidade": 7,
+      "confianca": 1,
+      "acessos": 3,
+      "ultimo_acesso": "2026-10-30T16:53:11.672Z",
+      "linksOut": [
+        "2026-10-30",
+        "Revisão de Arquitetura Cognitiva",
+        "Aula de Flutter no SENAI",
+        "Atividade SENAI",
+        "JavaScript"
+      ]
+    }
+  ]
+}
