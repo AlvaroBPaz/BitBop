@@ -1,4 +1,4 @@
-# 🤖 BitBop — Stack-Chan Desktop Companion Pet
+# 🤖 BitBop — Stack-Chan Desktop Companion Pet (BETA)
 
 > **Seu companheiro de mesa com IA multimodal, biometria vocal CAM++, cérebro cognitivo integrado ao Obsidian e zero latência perceptível.**
 
